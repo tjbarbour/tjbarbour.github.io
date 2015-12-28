@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Meta on T.J. Barbour</title>
+    <link>http://tjbarbour.github.io/tags/meta/</link>
+    <description>Recent content in Meta on T.J. Barbour</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 25 Dec 2015 00:45:22 -0800</lastBuildDate>
+    <atom:link href="http://tjbarbour.github.io/tags/meta/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hello World!</title>
+      <link>http://tjbarbour.github.io/post/hello-world/</link>
+      <pubDate>Fri, 25 Dec 2015 00:45:22 -0800</pubDate>
+      
+      <guid>http://tjbarbour.github.io/post/hello-world/</guid>
+      <description>
+
+&lt;h1 id=&#34;hello-world:aa77bbfd89a7b0ff10def205b9c08d51&#34;&gt;Hello World!&lt;/h1&gt;
+
+&lt;p&gt;Just setting up my blog, I&amp;rsquo;m using &lt;a href=&#34;https://gohugo.io/&#34;&gt;HUGO.io&lt;/a&gt; for static site generation, with the &lt;a href=&#34;http://themes.gohugo.io/startbootstrap-clean-blog/&#34;&gt;Start Bootstrap Clean Blog Template&lt;/a&gt; following the great instructions at the &lt;a href=&#34;https://github.com/humboldtux/sbcb-demo&#34;&gt;sample blog&amp;rsquo;s repo&lt;/a&gt;.  Also, I&amp;rsquo;m using the awesome (Trianglify Background Generator)[&lt;a href=&#34;http://alssndro.github.io/trianglify-background-generator/&#34;&gt;http://alssndro.github.io/trianglify-background-generator/&lt;/a&gt;] for my backgrounds.&lt;/p&gt;
+
+&lt;p&gt;More coming soon!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
