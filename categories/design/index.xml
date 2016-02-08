@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on T.J. Barbour</title>
-    <link>http://tjbarbour.github.io/post/</link>
-    <description>Recent content in Posts on T.J. Barbour</description>
+    <title>Design on T.J. Barbour</title>
+    <link>http://tjbarbour.github.io/categories/design/</link>
+    <description>Recent content in Design on T.J. Barbour</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The information in this weblog is provided &#34;AS IS&#34; with no warranties, and confers no rights.  This weblog does not represent the thoughts, intentions, plans or strategies of my employer. It is solely my opinion.</copyright>
     <lastBuildDate>Sun, 07 Feb 2016 01:43:44 -0700</lastBuildDate>
-    <atom:link href="http://tjbarbour.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://tjbarbour.github.io/categories/design/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Spotifygate and Intentionality</title>
@@ -47,65 +47,6 @@
 &lt;p&gt;It&amp;rsquo;s just my opinion, but I think that &lt;strong&gt;when you make design choices (and similarly develoment choices..) the more explicit you are, the easier it is for the user to follow where you are going and what you are doing&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;Maybe this is a reach, but I&amp;rsquo;d say that in the case of Spotify, if they were going to make &amp;lsquo;big design changes&amp;rsquo; they should&amp;rsquo;ve made it clear with a totally new logo, but by making a small (but still noticable) change, people were confused and couldn&amp;rsquo;t tell what they were trying to achieve.  At least there should have been some other change in conjunction with the color to make it obvious.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Fatal Focus</title>
-      <link>http://tjbarbour.github.io/post/fatal-focus/</link>
-      <pubDate>Sat, 26 Dec 2015 00:45:22 -0800</pubDate>
-      
-      <guid>http://tjbarbour.github.io/post/fatal-focus/</guid>
-      <description>
-
-&lt;blockquote&gt;
-&lt;p&gt;Summary: Never take the focus away from the current application, it could have disastrous results&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h1 id=&#34;someone-at-redmond-owes-me-an-hour:5a46c4b2cfe3d57077d95ddf79415d29&#34;&gt;&lt;em&gt;Someone at Redmond owes me an hour&amp;hellip;&lt;/em&gt;&lt;/h1&gt;
-
-&lt;p&gt;Ok, but really, sometimes our UX decisions can have unfortunate consequences.  There I was, working on an &lt;a href=&#34;http://tjbarbour.github.io/resume/&#34;&gt;important document&lt;/a&gt;, typing away&amp;hellip; ready to finish another line.. (period).. (ent&amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;When suddenly&lt;/em&gt; something like this popped up:
-&lt;img src=&#34;http://tjbarbour.github.io/img/updates_yey.png&#34; alt=&#34;Updates, one accidental keystroke away...&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Now sure, I probably could&amp;rsquo;ve changed a setting somewhere to not propmt me for updates but in any case, this little dialog just snatched my &lt;a href=&#34;https://en.wikipedia.org/wiki/Focus_(computing&#34;&gt;focus&lt;/a&gt; ) away, and that last keystroke I was about to hit? A simple [ENTER] and I went from productive to&amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://tjbarbour.github.io/img/updates_doomed.png&#34; alt=&#34;...doomed, updates&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This may be an exaggeration, but it magnifies &lt;strong&gt;how dangerous it can be to take focus away from your users!&lt;/strong&gt;  Imagine an application that just grabbed your mouse and pointed it to wherever they pleased?  That&amp;rsquo;s essentially what you are doing when you take the focus away.&lt;/p&gt;
-
-&lt;h1 id=&#34;the-lesson:5a46c4b2cfe3d57077d95ddf79415d29&#34;&gt;The lesson?&lt;/h1&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;(almost) Never steal focus, instead provide a meaningful notification or direction for the user to act on.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h1 id=&#34;are-there-any-exceptions:5a46c4b2cfe3d57077d95ddf79415d29&#34;&gt;Are there any exceptions?&lt;/h1&gt;
-
-&lt;p&gt;In web apps it may be common to focus the input upon page load, typically the fisrt input of the web page such as the &amp;ldquo;username&amp;rdquo; input for a login page.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;This is acceptable because during page load the user can&amp;rsquo;t interact with the page anyway, and the focus control is limited to that page, not like a naitive application that could take the user from one application where they are dropping careless keystrokes and switch the user to a context that requires a little more finesse&amp;hellip;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;So, developers, don&amp;rsquo;t distract your users, let them keep their focus.&lt;/strong&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Hello World!</title>
-      <link>http://tjbarbour.github.io/post/hello-world/</link>
-      <pubDate>Fri, 25 Dec 2015 00:45:22 -0800</pubDate>
-      
-      <guid>http://tjbarbour.github.io/post/hello-world/</guid>
-      <description>
-
-&lt;h1 id=&#34;hello-world:aa77bbfd89a7b0ff10def205b9c08d51&#34;&gt;Hello World!&lt;/h1&gt;
-
-&lt;p&gt;Just setting up my blog, I&amp;rsquo;m using &lt;a href=&#34;https://gohugo.io/&#34;&gt;HUGO.io&lt;/a&gt; for static site generation, with the &lt;a href=&#34;http://themes.gohugo.io/startbootstrap-clean-blog/&#34;&gt;Start Bootstrap Clean Blog Template&lt;/a&gt; following the great instructions at the &lt;a href=&#34;https://github.com/humboldtux/sbcb-demo&#34;&gt;sample blog&amp;rsquo;s repo&lt;/a&gt;.  Also, I&amp;rsquo;m using the awesome &lt;a href=&#34;http://alssndro.github.io/trianglify-background-generator/&#34;&gt;Trianglify Background Generator&lt;/a&gt; for my backgrounds.&lt;/p&gt;
-
-&lt;p&gt;More coming soon!&lt;/p&gt;
 </description>
     </item>
     
