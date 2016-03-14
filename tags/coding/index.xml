@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Development on T.J. Barbour</title>
-    <link>http://tjbarbour.github.io/categories/development/</link>
-    <description>Recent content in Development on T.J. Barbour</description>
+    <title>Coding on T.J. Barbour</title>
+    <link>http://tjbarbour.github.io/tags/coding/</link>
+    <description>Recent content in Coding on T.J. Barbour</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The information in this weblog is provided &#34;AS IS&#34; with no warranties, and confers no rights.  This weblog does not represent the thoughts, intentions, plans or strategies of my employer. It is solely my opinion.</copyright>
     <lastBuildDate>Mon, 14 Mar 2016 01:43:44 -0700</lastBuildDate>
-    <atom:link href="http://tjbarbour.github.io/categories/development/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://tjbarbour.github.io/tags/coding/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Why Fluent Wins</title>
@@ -120,22 +120,6 @@
 &lt;p&gt;&lt;strong&gt;Use Fluent API design whenever possible to ease your consumer&amp;rsquo;s development&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;(P.S. Thanks to &lt;a href=&#34;http://text.livetyping.com/&#34;&gt;Livetyping&lt;/a&gt; for the typing animations!)&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Hello World!</title>
-      <link>http://tjbarbour.github.io/post/hello-world/</link>
-      <pubDate>Fri, 25 Dec 2015 00:45:22 -0800</pubDate>
-      
-      <guid>http://tjbarbour.github.io/post/hello-world/</guid>
-      <description>
-
-&lt;h1 id=&#34;hello-world:aa77bbfd89a7b0ff10def205b9c08d51&#34;&gt;Hello World!&lt;/h1&gt;
-
-&lt;p&gt;Just setting up my blog, I&amp;rsquo;m using &lt;a href=&#34;https://gohugo.io/&#34;&gt;HUGO.io&lt;/a&gt; for static site generation, with the &lt;a href=&#34;http://themes.gohugo.io/startbootstrap-clean-blog/&#34;&gt;Start Bootstrap Clean Blog Template&lt;/a&gt; following the great instructions at the &lt;a href=&#34;https://github.com/humboldtux/sbcb-demo&#34;&gt;sample blog&amp;rsquo;s repo&lt;/a&gt;.  Also, I&amp;rsquo;m using the awesome &lt;a href=&#34;http://alssndro.github.io/trianglify-background-generator/&#34;&gt;Trianglify Background Generator&lt;/a&gt; for my backgrounds.&lt;/p&gt;
-
-&lt;p&gt;More coming soon!&lt;/p&gt;
 </description>
     </item>
     

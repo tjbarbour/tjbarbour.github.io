@@ -7,8 +7,121 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The information in this weblog is provided &#34;AS IS&#34; with no warranties, and confers no rights.  This weblog does not represent the thoughts, intentions, plans or strategies of my employer. It is solely my opinion.</copyright>
-    <lastBuildDate>Sun, 07 Feb 2016 01:43:44 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 14 Mar 2016 01:43:44 -0700</lastBuildDate>
     <atom:link href="http://tjbarbour.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Why Fluent Wins</title>
+      <link>http://tjbarbour.github.io/post/WhyFluentWins/</link>
+      <pubDate>Mon, 14 Mar 2016 01:43:44 -0700</pubDate>
+      
+      <guid>http://tjbarbour.github.io/post/WhyFluentWins/</guid>
+      <description>
+
+&lt;blockquote&gt;
+&lt;p&gt;Fluent APIs better match our mental model of how data is processed == WIN&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&#34;cześć-hello-in-polish:b0e60bcfa42f5b34f30ac4067a72cac0&#34;&gt;Cześć (hello in Polish)&lt;/h1&gt;
+
+&lt;p&gt;Does this make sense to you?&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;+ 3 4&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;You may read this as It roughly reads like &amp;ldquo;Let&amp;rsquo;s do an addition of 3 and 4.&amp;rdquo;  Sure, you may be familiar with &lt;a href=&#34;https://en.wikipedia.org/wiki/Polish_notation&#34;&gt;&amp;ldquo;Polish Notation&amp;rdquo;&lt;/a&gt; or variants like &amp;ldquo;Reverse Polish Notation&amp;rdquo; or RPN, but it&amp;rsquo;s not how most people naturally process these kind of operations.&lt;/p&gt;
+
+&lt;p&gt;Of course we usually think about it like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;3 + 4&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Here we envision this as &amp;ldquo;You have three, now add to it four&amp;rdquo; this seems natural.  And as we&amp;rsquo;ll see, this is aggravated when you chain many operations.&lt;/p&gt;
+
+&lt;h1 id=&#34;functions-make-us-think-in-reverse:b0e60bcfa42f5b34f30ac4067a72cac0&#34;&gt;Functions make us think in reverse&lt;/h1&gt;
+
+&lt;p&gt;Functions/Methods act more like Polish notation:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;int result = Math.pow(2,3); // 8&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;So when programming we write &lt;code&gt;POWER 2,3&lt;/code&gt; while in math terms we would write &lt;code&gt;2^3&lt;/code&gt;.  This gets even more confusing when you chain several operations.  Let&amp;rsquo;s take the example of doing some data conversion.  Examine this sample process of doing some data transformation:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Get a string from an XML document&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Base64&#34;&gt;Base64&lt;/a&gt; decode the string to get the binary value&lt;/li&gt;
+&lt;li&gt;Decrypt the binary value&lt;/li&gt;
+&lt;li&gt;Encode the clear binary value as an ASCII string&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Let&amp;rsquo;s look at how this process would be carried out using normal function&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var result = ASCIIEncode( Decrypt( Base64Decode( xml.GetAttribute(&amp;quot;foo&amp;quot;) ), decryptParameters ) );
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;When reading this code, the order is almost completely reversed.  Also, when writing it, we keep having to jump around to &amp;ldquo;surround&amp;rdquo; one function with another, watch:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://tjbarbour.github.io/img/fluent-bad.gif&#34; alt=&#34;traditional functions&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Of course, this can be partially remedied with intermediate variables, but you may not have any use for them.&lt;/p&gt;
+
+&lt;p&gt;One style of API that remedies this is the &lt;a href=&#34;http://martinfowler.com/bliki/FluentInterface.html&#34;&gt;Fluent Interface&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;fluent-methods-go-step-by-step:b0e60bcfa42f5b34f30ac4067a72cac0&#34;&gt;Fluent Methods go step by step&lt;/h1&gt;
+
+&lt;p&gt;A fluent interface usually works by always returning an object of a shared type which exposes common functions.  &lt;a href=&#34;https://jquery.com/&#34;&gt;jQuery&lt;/a&gt; is a prime example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$(&amp;quot;.some-class&amp;quot;)
+  .css(&amp;quot;color&amp;quot;,&amp;quot;red&amp;quot;)
+  .css(&amp;quot;padding&amp;quot;,10)
+  .on(&amp;quot;click&amp;quot;, function(){ console.log(&amp;quot;hai&amp;quot;); });
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Another way is simply by adding methods which are commonly exposed only as functions on the types they operate on, for example:&lt;/p&gt;
+
+&lt;p&gt;Instead of a generic utility class like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public class Math
+{
+    // ...
+    public Double Power(double base, double exponent)
+    {
+        // ... 
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Imagine a method on the numeric type itself like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public class Double
+{
+    // ...
+    public Double ToPower(double exponent)
+    {
+        return pow(this,exponent); 
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;With usage like &lt;code&gt;2.ToPower(3)&lt;/code&gt; Clearer, isn&amp;rsquo;t it?&lt;/p&gt;
+
+&lt;p&gt;There are some side benefits as well.  For example, there&amp;rsquo;s less chance you could confuse &lt;strong&gt;parameter order&lt;/strong&gt; with this version of the power function.  This also gives us a very &lt;strong&gt;guided way to organize methods&lt;/strong&gt;.  Instead of having a generic &amp;lsquo;utility&amp;rsquo; class, we add methods to whichever class they apply.  This makes it easier for future developers to find where to find add new utility methods and can help avoid &lt;a href=&#34;https://css-tricks.com/what-is-bikeshedding/&#34;&gt;Bikeshedding&lt;/a&gt; about how to organize APIs.&lt;/p&gt;
+
+&lt;h1 id=&#34;example-fluent-ized:b0e60bcfa42f5b34f30ac4067a72cac0&#34;&gt;Example, Fluent-ized&lt;/h1&gt;
+
+&lt;p&gt;Let&amp;rsquo;s return to our data conversion sample from earlier, and assume we&amp;rsquo;ve added on the needed class methods for the conversions.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var result = xml.GetAttribute(&amp;quot;foo&amp;quot;).FromBase64().Decrypt(decryptParameters).ToASCII();
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;See how much easier it is to follow?  You can read through the conversion left to right and typing is much smoother as well, watch:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://tjbarbour.github.io/img/fluent-good.gif&#34; alt=&#34;fluent interface&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You could say this style of API is more &amp;ldquo;ergonomic&amp;rdquo; for the consumer.  You can achieve this in C# using &lt;a href=&#34;https://msdn.microsoft.com/en-us/library/bb383977.aspx&#34;&gt;Extension &lt;/a&gt; &lt;a href=&#34;http://www.dotnetperls.com/extension&#34;&gt;Methods&lt;/a&gt;, which I&amp;rsquo;ll have to write about soon :)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Use Fluent API design whenever possible to ease your consumer&amp;rsquo;s development&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;(P.S. Thanks to &lt;a href=&#34;http://text.livetyping.com/&#34;&gt;Livetyping&lt;/a&gt; for the typing animations!)&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Spotifygate and Intentionality</title>
@@ -110,6 +223,134 @@
     </item>
     
     <item>
+      <title>Resume - T.J. Barbour</title>
+      <link>http://tjbarbour.github.io/post/draft/~resume/</link>
+      <pubDate>Thu, 02 Jul 2015 01:12:08 -0700</pubDate>
+      
+      <guid>http://tjbarbour.github.io/post/draft/~resume/</guid>
+      <description>
+
+&lt;h1 id=&#34;t-j-barbour-s-resume:a572a7fb8778d598643b812724c07c15&#34;&gt;T.J. Barbour&amp;rsquo;s Resume&lt;/h1&gt;
+
+&lt;h2 id=&#34;contact-information:a572a7fb8778d598643b812724c07c15&#34;&gt;Contact Information&lt;/h2&gt;
+
+&lt;p&gt;tjbarbour@gmail.com&lt;br /&gt;
+858 382 0360&lt;br /&gt;
+11429 Florindo Road&lt;br /&gt;
+San Diego CA 92127&lt;br /&gt;
+www.tjbarbour.com&lt;/p&gt;
+
+&lt;h2 id=&#34;skills-summary:a572a7fb8778d598643b812724c07c15&#34;&gt;Skills Summary&lt;/h2&gt;
+
+&lt;table&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Experience&lt;/td&gt;
+    &lt;td&gt;10 Years&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Main Skills&lt;/td&gt;
+    &lt;td&gt;C#, HTML, CSS, JavaScript&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;right&#34;&gt;Test&lt;/th&gt;
+&lt;th&gt;Value&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;Experience&lt;/td&gt;
+&lt;td&gt;10 Years&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;Main Skills&lt;/td&gt;
+&lt;td&gt;C#, HTML, CSS, JavaScript&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;Frameworks&lt;/td&gt;
+&lt;td&gt;.net, ASP.net MVC, jQuery, Bootstrap, WCF, Entity Framework&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;Tools&lt;/td&gt;
+&lt;td&gt;Visual Studio, TFS, NuGet, LINQPad, MS Office&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;Specializations&lt;/td&gt;
+&lt;td&gt;UI &amp;amp; UX, Security, Multi-Tiered Application Design&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;work-experience:a572a7fb8778d598643b812724c07c15&#34;&gt;Work Experience&lt;/h2&gt;
+
+&lt;h3 id=&#34;arris-formerly-motorola-staff-software-engineer-august-2006-present:a572a7fb8778d598643b812724c07c15&#34;&gt;ARRIS (formerly Motorola) - &lt;em&gt;Staff Software Engineer&lt;/em&gt; August 2006 - Present&lt;/h3&gt;
+
+&lt;p&gt;A lead developer involved in system design, implementation, and project management among other responsibilities in the “PKI Center” security department with a focus on User Interfaces and User Experience&lt;/p&gt;
+
+&lt;h4 id=&#34;projects:a572a7fb8778d598643b812724c07c15&#34;&gt;Projects&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;Optimus&amp;rdquo; Web Framework
+
+&lt;ul&gt;
+&lt;li&gt;Designed and implemented a NuGet package to standardize and simplify ASP.net MVC web development and minimize the need to create views (html/cshtml)&lt;/li&gt;
+&lt;li&gt;Worked with a team to create a standard department style and implemented it in the framework using Bootstrap, LESS and MVC templates&lt;/li&gt;
+&lt;li&gt;Integrated useful libraries such as AutoMapper, T4MVC, and DataTables.net&lt;/li&gt;
+&lt;li&gt;Migrated all actively developed department web applications to the framework&lt;/li&gt;
+&lt;li&gt;Application code bases were reduced by several factors and are now easier to maintain&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Single-Sign-On Portal (link*S)
+
+&lt;ul&gt;
+&lt;li&gt;Designed and implemented an ASP.net MVC web application which served as a department homepage and a single-sign-on portal for other applications&lt;/li&gt;
+&lt;li&gt;Implemented multi-factor authentication using Time-Based One Time Passwords (RFC6238, supporting Google Authenticator) and LDAP&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Online Code-Signing System&lt;br /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Implemented many parts of the ASP.net WebForms website for submitting code-signing requests&lt;/li&gt;
+&lt;li&gt;Implemented many of the custom code-signature plug-ins in the backend which interfaced with a Hardware Security Module (HSM)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Secure Data Pre-Generation Service&lt;br /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Designed and implemented a WCF Windows Service and supporting clients &amp;amp; libraries to pre-generate data used by several applications&lt;/li&gt;
+&lt;li&gt;The service has increased performance by orders of magnitude and has run smoothly for years with practically no modifications needed&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Online Certificate Authority System (link*)
+
+&lt;ul&gt;
+&lt;li&gt;Contributed to the implementation of the ASP.net WebForms website and the design of the system including certificate generation using configurable XML templates&lt;/li&gt;
+&lt;li&gt;Contributed to a patent for the certificate system (#20110047374)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Secure Licensing System (link*)
+
+&lt;ul&gt;
+&lt;li&gt;Contributed to the design &amp;amp; implementation of a system for generating secure feature-licenses through an ASP.net MVC web interface as well as an automated WCF Web Service&lt;/li&gt;
+&lt;li&gt;Lead the project management for some releases&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Other Contributions&lt;br /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Gave presentations for training, project design, and “brown-bag” technical education talks&lt;/li&gt;
+&lt;li&gt;Introduced best practices including scripted DB migrations and automated UI Testing with Selenium&lt;/li&gt;
+&lt;li&gt;Conducted interviews, mentored interns and trained new hires&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>about</title>
       <link>http://tjbarbour.github.io/about/</link>
       <pubDate>Thu, 02 Jul 2015 01:12:08 -0700</pubDate>
@@ -118,6 +359,32 @@
       <description>&lt;p&gt;My name is T.J. Barbour.  I&amp;rsquo;m a software developer working in San Diego looking for a remote full-time position.&lt;/p&gt;
 
 &lt;p&gt;See more about my experience in my &lt;a href=&#34;https://dl.dropboxusercontent.com/u/4111188/TJ-Barbour-Resume.pdf&#34;&gt;resume&lt;/a&gt; or contact me using the links below.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://tjbarbour.github.io/post/draft/kickoff-processes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://tjbarbour.github.io/post/draft/kickoff-processes/</guid>
+      <description>
+
+&lt;h1 id=&#34;fun-ways-to-kickoff-system-design-tasks:a9e54cc09f0bd99e65879e5a9df2bfa9&#34;&gt;Fun ways to kickoff system design tasks&lt;/h1&gt;
+
+&lt;h2 id=&#34;post-it-schemas:a9e54cc09f0bd99e65879e5a9df2bfa9&#34;&gt;Post-it Schemas&lt;/h2&gt;
+
+&lt;p&gt;Simply think of all the &amp;lsquo;things&amp;rsquo; you need to store (user, class, grade, assignment)&lt;/p&gt;
+
+&lt;p&gt;create post its for all of them and start connecting them (whiteboard hopefully)&lt;/p&gt;
+
+&lt;h2 id=&#34;user-role-stickers:a9e54cc09f0bd99e65879e5a9df2bfa9&#34;&gt;User Role Stickers&lt;/h2&gt;
+
+&lt;p&gt;Visio or any drawing tool, create circles with names of people in different depts.&lt;/p&gt;
+
+&lt;p&gt;Create squares with action names inside&lt;/p&gt;
+
+&lt;p&gt;Simply copy the person circles in to each action&lt;/p&gt;
 </description>
     </item>
     

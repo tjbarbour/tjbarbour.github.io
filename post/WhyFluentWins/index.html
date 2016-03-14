@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Spotifygate and Intentionality -- T.J. Barbour</title>
+    <title>Why Fluent Wins -- T.J. Barbour</title>
 
     
 
@@ -77,20 +77,20 @@
 
     
     
-    <header class="intro-header" style="background-image: url('http://tjbarbour.github.io//img/spotify-gate.jpg')">
+    <header class="intro-header" style="background-image: url('http://tjbarbour.github.io//img/fluent-wins.jpg')">
       
       <div class="container">
         <div class="row">
            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
              <div class="post-heading">
-               <h1>Spotifygate And Intentionality</h1>
-               <h2 class="subheading">Design Like You MEAN IT!</h2>
-               <span class="meta">Posted by <a href="#">T.J. Barbour</a> on Sun, Feb 7, 2016
+               <h1>Why Fluent Wins</h1>
+               <h2 class="subheading">Fluent:Interfaces :: Infix:Notations</h2>
+               <span class="meta">Posted by <a href="#">T.J. Barbour</a> on Mon, Mar 14, 2016
                  <br />
-                 In <a href="/categories/design" >DESIGN</a>, 
+                 In <a href="/categories/development" >DEVELOPMENT</a>, 
 
                  <br />
-                 Tags <a href="/tags/design" >design</a> <a href="/tags/misfire" >misfire</a> 
+                 Tags <a href="/tags/coding" >coding</a> <a href="/tags/code-style" >code-style</a> <a href="/tags/lazy-coder" >lazy-coder</a> 
 
                </span>
              </div>
@@ -107,34 +107,107 @@
                   
 
 <blockquote>
-<p>Design decisions should be clear and carried out boldly to avoid giving a &lsquo;weird&rsquo; feel</p>
+<p>Fluent APIs better match our mental model of how data is processed == WIN</p>
 </blockquote>
 
-<h1 id="spotifygate:47a22bdcbd94c3e0c234fbc5bd53d92a">Spotifygate</h1>
+<h1 id="cześć-hello-in-polish:b0e60bcfa42f5b34f30ac4067a72cac0">Cześć (hello in Polish)</h1>
 
-<p>Spotify got some backlash a while  ago when they made a subtle change in their logo.  Personally winced at my windows tray when something looked off with my Spotify logo&hellip;</p>
+<p>Does this make sense to you?</p>
 
-<p>Here&rsquo;s the delta from a screencap:</p>
+<p><code>+ 3 4</code></p>
 
-<p><img src="/img/spotify-delta.png" alt="old spotify vs. new spotify" /></p>
+<p>You may read this as It roughly reads like &ldquo;Let&rsquo;s do an addition of 3 and 4.&rdquo;  Sure, you may be familiar with <a href="https://en.wikipedia.org/wiki/Polish_notation">&ldquo;Polish Notation&rdquo;</a> or variants like &ldquo;Reverse Polish Notation&rdquo; or RPN, but it&rsquo;s not how most people naturally process these kind of operations.</p>
 
-<p>Now, most people probably appreciate the new logo and slightly &lsquo;flatter&rsquo; color tone, but that&rsquo;s not the point.  The change was so subtle that many people didn&rsquo;t have the reaction <em>&lsquo;KEWL LOGO UPDATE!&rsquo;</em> but instead they probably thought <em>&lsquo;IZ MY MONITOR BROKE?&rsquo;</em></p>
+<p>Of course we usually think about it like this:</p>
 
-<p>That was my reaction, <strong>I really wondered for a second if my monitor was on the fritz</strong> because of the logo change.</p>
+<p><code>3 + 4</code></p>
 
-<p>According to the <a href="http://thenextweb.com/dd/2015/07/20/wow-thats-green/">TNW</a> article (found via the great <a href="http://www.underconsideration.com/brandnew/archives/spotifygate.php">Brand New</a>) Spotify has big design changes planned.  They also commented that they &ldquo;didn&rsquo;t communicate it clearly&rdquo;.  I think that&rsquo;s the issue, miscommunication, and it&rsquo;s not that it required a press release, but rather that the change itself didn&rsquo;t communicate well on its own.</p>
+<p>Here we envision this as &ldquo;You have three, now add to it four&rdquo; this seems natural.  And as we&rsquo;ll see, this is aggravated when you chain many operations.</p>
 
-<h1 id="intentionality:47a22bdcbd94c3e0c234fbc5bd53d92a">Intentionality</h1>
+<h1 id="functions-make-us-think-in-reverse:b0e60bcfa42f5b34f30ac4067a72cac0">Functions make us think in reverse</h1>
 
-<p>One opinion I&rsquo;ve formed in the (short) time I&rsquo;ve worked in design is that <strong>your decisions should be clear and not wishy-washy</strong>.  What do I mean? compare these 2 screnshots:</p>
+<p>Functions/Methods act more like Polish notation:</p>
 
-<p><img src="/img/bootstrap-popover-overlap.png" alt="2 bootstrap popovers, default above, 'overlapping' adjustment below" /></p>
+<p><code>int result = Math.pow(2,3); // 8</code></p>
 
-<p>This is from <a href="http://getbootstrap.com/javascript/#popovers">bootstrap documentation for the popover</a>.  The top popover is the default style, where the popover &lsquo;arrow&rsquo; sits right next to the trigger element.  The screnshot below shows a slight modification where the arrow sits on top of the trigger element.  Why the modification?  The overlapping style creates a stronger indication of the relationship between the popover and the trigger, also its visually easier to pick up because of the contrast in this case.  The top (default) version just sets the popover next to the trigger, and doesn&rsquo;t quite make a decision &ldquo;Am I gonna hover to the side, or sit on top of the trigger? hmm&hellip;&rdquo;  Whereas in the modified example, its more obvious &ldquo;Yup, I&rsquo;m a popover, and I CAME FROM this trigger element right here, right under my arrow!&rdquo;</p>
+<p>So when programming we write <code>POWER 2,3</code> while in math terms we would write <code>2^3</code>.  This gets even more confusing when you chain several operations.  Let&rsquo;s take the example of doing some data conversion.  Examine this sample process of doing some data transformation:</p>
 
-<p>It&rsquo;s just my opinion, but I think that <strong>when you make design choices (and similarly develoment choices..) the more explicit you are, the easier it is for the user to follow where you are going and what you are doing</strong>.</p>
+<ol>
+<li>Get a string from an XML document</li>
+<li><a href="https://en.wikipedia.org/wiki/Base64">Base64</a> decode the string to get the binary value</li>
+<li>Decrypt the binary value</li>
+<li>Encode the clear binary value as an ASCII string</li>
+</ol>
 
-<p>Maybe this is a reach, but I&rsquo;d say that in the case of Spotify, if they were going to make &lsquo;big design changes&rsquo; they should&rsquo;ve made it clear with a totally new logo, but by making a small (but still noticable) change, people were confused and couldn&rsquo;t tell what they were trying to achieve.  At least there should have been some other change in conjunction with the color to make it obvious.</p>
+<p>Let&rsquo;s look at how this process would be carried out using normal function</p>
+
+<pre><code>var result = ASCIIEncode( Decrypt( Base64Decode( xml.GetAttribute(&quot;foo&quot;) ), decryptParameters ) );
+</code></pre>
+
+<p>When reading this code, the order is almost completely reversed.  Also, when writing it, we keep having to jump around to &ldquo;surround&rdquo; one function with another, watch:</p>
+
+<p><img src="/img/fluent-bad.gif" alt="traditional functions" /></p>
+
+<p>Of course, this can be partially remedied with intermediate variables, but you may not have any use for them.</p>
+
+<p>One style of API that remedies this is the <a href="http://martinfowler.com/bliki/FluentInterface.html">Fluent Interface</a></p>
+
+<h1 id="fluent-methods-go-step-by-step:b0e60bcfa42f5b34f30ac4067a72cac0">Fluent Methods go step by step</h1>
+
+<p>A fluent interface usually works by always returning an object of a shared type which exposes common functions.  <a href="https://jquery.com/">jQuery</a> is a prime example:</p>
+
+<pre><code>$(&quot;.some-class&quot;)
+  .css(&quot;color&quot;,&quot;red&quot;)
+  .css(&quot;padding&quot;,10)
+  .on(&quot;click&quot;, function(){ console.log(&quot;hai&quot;); });
+</code></pre>
+
+<p>Another way is simply by adding methods which are commonly exposed only as functions on the types they operate on, for example:</p>
+
+<p>Instead of a generic utility class like:</p>
+
+<pre><code>public class Math
+{
+    // ...
+    public Double Power(double base, double exponent)
+    {
+        // ... 
+    }
+}
+</code></pre>
+
+<p>Imagine a method on the numeric type itself like:</p>
+
+<pre><code>public class Double
+{
+    // ...
+    public Double ToPower(double exponent)
+    {
+        return pow(this,exponent); 
+    }
+}
+</code></pre>
+
+<p>With usage like <code>2.ToPower(3)</code> Clearer, isn&rsquo;t it?</p>
+
+<p>There are some side benefits as well.  For example, there&rsquo;s less chance you could confuse <strong>parameter order</strong> with this version of the power function.  This also gives us a very <strong>guided way to organize methods</strong>.  Instead of having a generic &lsquo;utility&rsquo; class, we add methods to whichever class they apply.  This makes it easier for future developers to find where to find add new utility methods and can help avoid <a href="https://css-tricks.com/what-is-bikeshedding/">Bikeshedding</a> about how to organize APIs.</p>
+
+<h1 id="example-fluent-ized:b0e60bcfa42f5b34f30ac4067a72cac0">Example, Fluent-ized</h1>
+
+<p>Let&rsquo;s return to our data conversion sample from earlier, and assume we&rsquo;ve added on the needed class methods for the conversions.</p>
+
+<pre><code>var result = xml.GetAttribute(&quot;foo&quot;).FromBase64().Decrypt(decryptParameters).ToASCII();
+</code></pre>
+
+<p>See how much easier it is to follow?  You can read through the conversion left to right and typing is much smoother as well, watch:</p>
+
+<p><img src="/img/fluent-good.gif" alt="fluent interface" /></p>
+
+<p>You could say this style of API is more &ldquo;ergonomic&rdquo; for the consumer.  You can achieve this in C# using <a href="https://msdn.microsoft.com/en-us/library/bb383977.aspx">Extension </a> <a href="http://www.dotnetperls.com/extension">Methods</a>, which I&rsquo;ll have to write about soon :)</p>
+
+<p><strong>Use Fluent API design whenever possible to ease your consumer&rsquo;s development</strong></p>
+
+<p>(P.S. Thanks to <a href="http://text.livetyping.com/">Livetyping</a> for the typing animations!)</p>
 
                 </div>
             </div>

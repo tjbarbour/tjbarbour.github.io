@@ -9,8 +9,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Spotifygate and Intentionality -- T.J. Barbour</title>
+    <title>Code Style -- T.J. Barbour</title>
 
+    
+    <link href="http://tjbarbour.github.io/tags/code-style/index.xml" rel="alternate" type="application/rss+xml" title="T.J. Barbour" />
+    <link href="http://tjbarbour.github.io/tags/code-style/index.xml" rel="feed" type="application/rss+xml" title="T.J. Barbour" />
     
 
     
@@ -76,70 +79,41 @@
 
 
     
-    
-    <header class="intro-header" style="background-image: url('http://tjbarbour.github.io//img/spotify-gate.jpg')">
-      
-      <div class="container">
-        <div class="row">
-           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-             <div class="post-heading">
-               <h1>Spotifygate And Intentionality</h1>
-               <h2 class="subheading">Design Like You MEAN IT!</h2>
-               <span class="meta">Posted by <a href="#">T.J. Barbour</a> on Sun, Feb 7, 2016
-                 <br />
-                 In <a href="/categories/design" >DESIGN</a>, 
-
-                 <br />
-                 Tags <a href="/tags/design" >design</a> <a href="/tags/misfire" >misfire</a> 
-
-               </span>
-             </div>
+    <header class="intro-header" style="background-image: url('http://tjbarbour.github.io/img/home-bg.jpg')">
+     <div class="container">
+       <div class="row">
+         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+           <div class="site-heading">
+             <h1>Code Style</h1>
+             <hr class="small">
+             <span class="subheading"></span>
            </div>
-        </div>
-      </div>
+         </div>
+       </div>
+     </div>
     </header>
 
     
-    <article>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                  
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          
+                             <div class="post-preview">
+                  <p class="post-meta"><a href="http://tjbarbour.github.io/post/WhyFluentWins/">Why Fluent Wins</a> on Mon, Mar 14, 2016
+                    <br />
+                    In <a href="/categories/development" >DEVELOPMENT</a>, 
 
-<blockquote>
-<p>Design decisions should be clear and carried out boldly to avoid giving a &lsquo;weird&rsquo; feel</p>
-</blockquote>
+                    Tags <a href="/tags/coding" >coding</a> <a href="/tags/code-style" >code-style</a> <a href="/tags/lazy-coder" >lazy-coder</a> 
 
-<h1 id="spotifygate:47a22bdcbd94c3e0c234fbc5bd53d92a">Spotifygate</h1>
+                  </p>
+               </div>
 
-<p>Spotify got some backlash a while  ago when they made a subtle change in their logo.  Personally winced at my windows tray when something looked off with my Spotify logo&hellip;</p>
-
-<p>Here&rsquo;s the delta from a screencap:</p>
-
-<p><img src="/img/spotify-delta.png" alt="old spotify vs. new spotify" /></p>
-
-<p>Now, most people probably appreciate the new logo and slightly &lsquo;flatter&rsquo; color tone, but that&rsquo;s not the point.  The change was so subtle that many people didn&rsquo;t have the reaction <em>&lsquo;KEWL LOGO UPDATE!&rsquo;</em> but instead they probably thought <em>&lsquo;IZ MY MONITOR BROKE?&rsquo;</em></p>
-
-<p>That was my reaction, <strong>I really wondered for a second if my monitor was on the fritz</strong> because of the logo change.</p>
-
-<p>According to the <a href="http://thenextweb.com/dd/2015/07/20/wow-thats-green/">TNW</a> article (found via the great <a href="http://www.underconsideration.com/brandnew/archives/spotifygate.php">Brand New</a>) Spotify has big design changes planned.  They also commented that they &ldquo;didn&rsquo;t communicate it clearly&rdquo;.  I think that&rsquo;s the issue, miscommunication, and it&rsquo;s not that it required a press release, but rather that the change itself didn&rsquo;t communicate well on its own.</p>
-
-<h1 id="intentionality:47a22bdcbd94c3e0c234fbc5bd53d92a">Intentionality</h1>
-
-<p>One opinion I&rsquo;ve formed in the (short) time I&rsquo;ve worked in design is that <strong>your decisions should be clear and not wishy-washy</strong>.  What do I mean? compare these 2 screnshots:</p>
-
-<p><img src="/img/bootstrap-popover-overlap.png" alt="2 bootstrap popovers, default above, 'overlapping' adjustment below" /></p>
-
-<p>This is from <a href="http://getbootstrap.com/javascript/#popovers">bootstrap documentation for the popover</a>.  The top popover is the default style, where the popover &lsquo;arrow&rsquo; sits right next to the trigger element.  The screnshot below shows a slight modification where the arrow sits on top of the trigger element.  Why the modification?  The overlapping style creates a stronger indication of the relationship between the popover and the trigger, also its visually easier to pick up because of the contrast in this case.  The top (default) version just sets the popover next to the trigger, and doesn&rsquo;t quite make a decision &ldquo;Am I gonna hover to the side, or sit on top of the trigger? hmm&hellip;&rdquo;  Whereas in the modified example, its more obvious &ldquo;Yup, I&rsquo;m a popover, and I CAME FROM this trigger element right here, right under my arrow!&rdquo;</p>
-
-<p>It&rsquo;s just my opinion, but I think that <strong>when you make design choices (and similarly develoment choices..) the more explicit you are, the easier it is for the user to follow where you are going and what you are doing</strong>.</p>
-
-<p>Maybe this is a reach, but I&rsquo;d say that in the case of Spotify, if they were going to make &lsquo;big design changes&rsquo; they should&rsquo;ve made it clear with a totally new logo, but by making a small (but still noticable) change, people were confused and couldn&rsquo;t tell what they were trying to achieve.  At least there should have been some other change in conjunction with the color to make it obvious.</p>
-
-                </div>
-            </div>
+          
+          
+    
         </div>
-    </article>
+      </div>
+    </div>
 
     <hr>
     
