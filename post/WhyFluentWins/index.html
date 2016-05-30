@@ -116,13 +116,13 @@
 
 <p><code>+ 3 4</code></p>
 
-<p>You may read this as It roughly reads like &ldquo;Let&rsquo;s do an addition of 3 and 4.&rdquo;  Sure, you may be familiar with <a href="https://en.wikipedia.org/wiki/Polish_notation">&ldquo;Polish Notation&rdquo;</a> or variants like &ldquo;Reverse Polish Notation&rdquo; or RPN, but it&rsquo;s not how most people naturally process these kind of operations.</p>
+<p>You may read this as &ldquo;Let&rsquo;s do an addition of 3 and 4.&rdquo;  Sure, you may be familiar with <a href="https://en.wikipedia.org/wiki/Polish_notation">&ldquo;Polish Notation&rdquo;</a> or variants like &ldquo;Reverse Polish Notation&rdquo; or RPN, but it&rsquo;s not how most people naturally process these kind of operations.</p>
 
-<p>Of course we usually think about it like this:</p>
+<p>Of course, we usually think about it like this:</p>
 
 <p><code>3 + 4</code></p>
 
-<p>Here we envision this as &ldquo;You have three, now add to it four&rdquo; this seems natural.  And as we&rsquo;ll see, this is aggravated when you chain many operations.</p>
+<p>Here we envision this as &ldquo;You have three, now add four to it.&rdquo;  This seems natural.  And as we&rsquo;ll see, other notations aggravate the complexity when you chain many operations.</p>
 
 <h1 id="functions-make-us-think-in-reverse:b0e60bcfa42f5b34f30ac4067a72cac0">Functions make us think in reverse</h1>
 
@@ -130,7 +130,7 @@
 
 <p><code>int result = Math.pow(2,3); // 8</code></p>
 
-<p>So when programming we write <code>POWER 2,3</code> while in math terms we would write <code>2^3</code>.  This gets even more confusing when you chain several operations.  Let&rsquo;s take the example of doing some data conversion.  Examine this sample process of doing some data transformation:</p>
+<p>So when programming we write something like <code>POWER 2,3</code> while in math terms we would write <code>2^3</code>.  This gets even more confusing when you chain several operations.  Let&rsquo;s take the example of doing some data conversion:</p>
 
 <ol>
 <li>Get a string from an XML document</li>
@@ -144,7 +144,7 @@
 <pre><code>var result = ASCIIEncode( Decrypt( Base64Decode( xml.GetAttribute(&quot;foo&quot;) ), decryptParameters ) );
 </code></pre>
 
-<p>When reading this code, the order is almost completely reversed.  Also, when writing it, we keep having to jump around to &ldquo;surround&rdquo; one function with another, watch:</p>
+<p>When reading this code, the order is almost completely reversed.  Also, when writing it, we keep to jumping around to &ldquo;surround&rdquo; one function with another, watch:</p>
 
 <p><img src="/img/fluent-bad.gif" alt="traditional functions" /></p>
 
@@ -162,7 +162,7 @@
   .on(&quot;click&quot;, function(){ console.log(&quot;hai&quot;); });
 </code></pre>
 
-<p>Another way is simply by adding methods which are commonly exposed only as functions on the types they operate on, for example:</p>
+<p>Another way to acheive fluent-like interfaces is by adding methods as members to the types they operate on instead of stand alone functions, for example:</p>
 
 <p>Instead of a generic utility class like:</p>
 
@@ -183,14 +183,14 @@
     // ...
     public Double ToPower(double exponent)
     {
-        return pow(this,exponent); 
+        return Math.Power(this,exponent); 
     }
 }
 </code></pre>
 
-<p>With usage like <code>2.ToPower(3)</code> Clearer, isn&rsquo;t it?</p>
+<p>With usage like <code>2.ToPower(3)</code> isn&rsquo;t it a bit clearer?</p>
 
-<p>There are some side benefits as well.  For example, there&rsquo;s less chance you could confuse <strong>parameter order</strong> with this version of the power function.  This also gives us a very <strong>guided way to organize methods</strong>.  Instead of having a generic &lsquo;utility&rsquo; class, we add methods to whichever class they apply.  This makes it easier for future developers to find where to find add new utility methods and can help avoid <a href="https://css-tricks.com/what-is-bikeshedding/">Bikeshedding</a> about how to organize APIs.</p>
+<p>There are some side benefits as well.  For example, there&rsquo;s less chance you could confuse <strong>parameter order</strong> with this version of the power function.  This also gives us a very <strong>guided way to organize methods</strong>.  Instead of having a generic &lsquo;utility&rsquo; class which could become a mishmash of unrelated methods, we add methods to whichever class they apply.  This makes it easier for future developers to find where to add new utility methods and can help avoid <a href="https://css-tricks.com/what-is-bikeshedding/">Bikeshedding</a> about how to organize APIs.</p>
 
 <h1 id="example-fluent-ized:b0e60bcfa42f5b34f30ac4067a72cac0">Example, Fluent-ized</h1>
 
@@ -205,7 +205,7 @@
 
 <p>You could say this style of API is more &ldquo;ergonomic&rdquo; for the consumer.  You can achieve this in C# using <a href="https://msdn.microsoft.com/en-us/library/bb383977.aspx">Extension </a> <a href="http://www.dotnetperls.com/extension">Methods</a>, which I&rsquo;ll have to write about soon :)</p>
 
-<p><strong>Use Fluent API design whenever possible to ease your consumer&rsquo;s development</strong></p>
+<p>Moral of the story: <strong>Use Fluent API design whenever possible to ease your API consumer&rsquo;s development</strong></p>
 
 <p>(P.S. Thanks to <a href="http://text.livetyping.com/">Livetyping</a> for the typing animations!)</p>
 

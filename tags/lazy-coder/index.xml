@@ -28,13 +28,13 @@
 
 &lt;p&gt;&lt;code&gt;+ 3 4&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;You may read this as It roughly reads like &amp;ldquo;Let&amp;rsquo;s do an addition of 3 and 4.&amp;rdquo;  Sure, you may be familiar with &lt;a href=&#34;https://en.wikipedia.org/wiki/Polish_notation&#34;&gt;&amp;ldquo;Polish Notation&amp;rdquo;&lt;/a&gt; or variants like &amp;ldquo;Reverse Polish Notation&amp;rdquo; or RPN, but it&amp;rsquo;s not how most people naturally process these kind of operations.&lt;/p&gt;
+&lt;p&gt;You may read this as &amp;ldquo;Let&amp;rsquo;s do an addition of 3 and 4.&amp;rdquo;  Sure, you may be familiar with &lt;a href=&#34;https://en.wikipedia.org/wiki/Polish_notation&#34;&gt;&amp;ldquo;Polish Notation&amp;rdquo;&lt;/a&gt; or variants like &amp;ldquo;Reverse Polish Notation&amp;rdquo; or RPN, but it&amp;rsquo;s not how most people naturally process these kind of operations.&lt;/p&gt;
 
-&lt;p&gt;Of course we usually think about it like this:&lt;/p&gt;
+&lt;p&gt;Of course, we usually think about it like this:&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;3 + 4&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;Here we envision this as &amp;ldquo;You have three, now add to it four&amp;rdquo; this seems natural.  And as we&amp;rsquo;ll see, this is aggravated when you chain many operations.&lt;/p&gt;
+&lt;p&gt;Here we envision this as &amp;ldquo;You have three, now add four to it.&amp;rdquo;  This seems natural.  And as we&amp;rsquo;ll see, other notations aggravate the complexity when you chain many operations.&lt;/p&gt;
 
 &lt;h1 id=&#34;functions-make-us-think-in-reverse:b0e60bcfa42f5b34f30ac4067a72cac0&#34;&gt;Functions make us think in reverse&lt;/h1&gt;
 
@@ -42,7 +42,7 @@
 
 &lt;p&gt;&lt;code&gt;int result = Math.pow(2,3); // 8&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;So when programming we write &lt;code&gt;POWER 2,3&lt;/code&gt; while in math terms we would write &lt;code&gt;2^3&lt;/code&gt;.  This gets even more confusing when you chain several operations.  Let&amp;rsquo;s take the example of doing some data conversion.  Examine this sample process of doing some data transformation:&lt;/p&gt;
+&lt;p&gt;So when programming we write something like &lt;code&gt;POWER 2,3&lt;/code&gt; while in math terms we would write &lt;code&gt;2^3&lt;/code&gt;.  This gets even more confusing when you chain several operations.  Let&amp;rsquo;s take the example of doing some data conversion:&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;Get a string from an XML document&lt;/li&gt;
@@ -56,7 +56,7 @@
 &lt;pre&gt;&lt;code&gt;var result = ASCIIEncode( Decrypt( Base64Decode( xml.GetAttribute(&amp;quot;foo&amp;quot;) ), decryptParameters ) );
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;When reading this code, the order is almost completely reversed.  Also, when writing it, we keep having to jump around to &amp;ldquo;surround&amp;rdquo; one function with another, watch:&lt;/p&gt;
+&lt;p&gt;When reading this code, the order is almost completely reversed.  Also, when writing it, we keep to jumping around to &amp;ldquo;surround&amp;rdquo; one function with another, watch:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://tjbarbour.github.io/img/fluent-bad.gif&#34; alt=&#34;traditional functions&#34; /&gt;&lt;/p&gt;
 
@@ -74,7 +74,7 @@
   .on(&amp;quot;click&amp;quot;, function(){ console.log(&amp;quot;hai&amp;quot;); });
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Another way is simply by adding methods which are commonly exposed only as functions on the types they operate on, for example:&lt;/p&gt;
+&lt;p&gt;Another way to acheive fluent-like interfaces is by adding methods as members to the types they operate on instead of stand alone functions, for example:&lt;/p&gt;
 
 &lt;p&gt;Instead of a generic utility class like:&lt;/p&gt;
 
@@ -95,14 +95,14 @@
     // ...
     public Double ToPower(double exponent)
     {
-        return pow(this,exponent); 
+        return Math.Power(this,exponent); 
     }
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;With usage like &lt;code&gt;2.ToPower(3)&lt;/code&gt; Clearer, isn&amp;rsquo;t it?&lt;/p&gt;
+&lt;p&gt;With usage like &lt;code&gt;2.ToPower(3)&lt;/code&gt; isn&amp;rsquo;t it a bit clearer?&lt;/p&gt;
 
-&lt;p&gt;There are some side benefits as well.  For example, there&amp;rsquo;s less chance you could confuse &lt;strong&gt;parameter order&lt;/strong&gt; with this version of the power function.  This also gives us a very &lt;strong&gt;guided way to organize methods&lt;/strong&gt;.  Instead of having a generic &amp;lsquo;utility&amp;rsquo; class, we add methods to whichever class they apply.  This makes it easier for future developers to find where to find add new utility methods and can help avoid &lt;a href=&#34;https://css-tricks.com/what-is-bikeshedding/&#34;&gt;Bikeshedding&lt;/a&gt; about how to organize APIs.&lt;/p&gt;
+&lt;p&gt;There are some side benefits as well.  For example, there&amp;rsquo;s less chance you could confuse &lt;strong&gt;parameter order&lt;/strong&gt; with this version of the power function.  This also gives us a very &lt;strong&gt;guided way to organize methods&lt;/strong&gt;.  Instead of having a generic &amp;lsquo;utility&amp;rsquo; class which could become a mishmash of unrelated methods, we add methods to whichever class they apply.  This makes it easier for future developers to find where to add new utility methods and can help avoid &lt;a href=&#34;https://css-tricks.com/what-is-bikeshedding/&#34;&gt;Bikeshedding&lt;/a&gt; about how to organize APIs.&lt;/p&gt;
 
 &lt;h1 id=&#34;example-fluent-ized:b0e60bcfa42f5b34f30ac4067a72cac0&#34;&gt;Example, Fluent-ized&lt;/h1&gt;
 
@@ -117,7 +117,7 @@
 
 &lt;p&gt;You could say this style of API is more &amp;ldquo;ergonomic&amp;rdquo; for the consumer.  You can achieve this in C# using &lt;a href=&#34;https://msdn.microsoft.com/en-us/library/bb383977.aspx&#34;&gt;Extension &lt;/a&gt; &lt;a href=&#34;http://www.dotnetperls.com/extension&#34;&gt;Methods&lt;/a&gt;, which I&amp;rsquo;ll have to write about soon :)&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Use Fluent API design whenever possible to ease your consumer&amp;rsquo;s development&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Moral of the story: &lt;strong&gt;Use Fluent API design whenever possible to ease your API consumer&amp;rsquo;s development&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;(P.S. Thanks to &lt;a href=&#34;http://text.livetyping.com/&#34;&gt;Livetyping&lt;/a&gt; for the typing animations!)&lt;/p&gt;
 </description>
