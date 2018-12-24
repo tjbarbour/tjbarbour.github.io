@@ -1,0 +1,15 @@
+.site-heading a{
+	color: #fff;
+	text-decoration: underline;
+}
+
+.headshot{
+	background-image: url("/img/headshot-casual.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	float: left;
+	margin-right: 20px;
+	border: 2px solid #000;
+	height: 200px;
+	width: 200px;
+}

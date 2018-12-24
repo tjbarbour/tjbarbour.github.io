@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bad on T.J. Barbour</title>
+    <link>http://localhost:1313/tags/bad/</link>
+    <description>Recent content in Bad on T.J. Barbour</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Code released under the Apache 2.0 license..</copyright>
+    <lastBuildDate>Thu, 02 Jul 2015 01:43:44 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/bad/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>fatal focus</title>
+      <link>http://localhost:1313/post/fatal-focus/</link>
+      <pubDate>Thu, 02 Jul 2015 01:43:44 -0700</pubDate>
+      
+      <guid>http://localhost:1313/post/fatal-focus/</guid>
+      <description>
+
+&lt;blockquote&gt;
+&lt;p&gt;Summary: Never take the focus away from the current application, it could have disastrous results&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&#34;someone-at-redmond-owes-me-an-hour:5a46c4b2cfe3d57077d95ddf79415d29&#34;&gt;&lt;em&gt;Someone at Redmond owes me an hour&amp;hellip;&lt;/em&gt;&lt;/h1&gt;
+
+&lt;p&gt;Ok, but really, sometimes our UX decisions can have unfortunate consequences.  There I was, working on an &lt;a href=&#34;http://localhost:1313/resume/&#34;&gt;important document&lt;/a&gt;, typing away&amp;hellip; ready to finish another line.. (period).. (ent&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;When suddenly&lt;/em&gt; something like this popped up:
+&lt;img src=&#34;http://localhost:1313/img/updates_yey.png&#34; alt=&#34;Updates, one accidental keystroke away...&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Now sure, I probably could&amp;rsquo;ve changed a setting somewhere to not propmt me for updates but in any case, this little dialog just snatched my &lt;a href=&#34;https://en.wikipedia.org/wiki/Focus_(computing&#34;&gt;focus&lt;/a&gt; ) away, and that last keystroke I was about to hit? A simple [ENTER] and I went from productive to&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/updates_doomed.png&#34; alt=&#34;...doomed, updates&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;This may be an exaggeration, but it magnifies &lt;strong&gt;how dangerous it can be to take focus away from your users!&lt;/strong&gt;  Imagine an application that just grabbed your mouse and pointed it to wherever they pleased?  That&amp;rsquo;s essentially what you are doing when you take the focus away.&lt;/p&gt;
+
+&lt;h1 id=&#34;the-lesson:5a46c4b2cfe3d57077d95ddf79415d29&#34;&gt;The lesson?&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;(almost) Never steal focus, instead provide a meaningful notification or direction for the user to act on.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&#34;are-there-any-exceptions:5a46c4b2cfe3d57077d95ddf79415d29&#34;&gt;Are there any exceptions?&lt;/h1&gt;
+
+&lt;p&gt;In web apps it may be common to focus the input upon page load, typically the fisrt input of the web page such as the &amp;ldquo;username&amp;rdquo; input for a login page.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;This is acceptable because during page load the user can&amp;rsquo;t interact with the page anyway, and the focus control is limited to that page, not like a naitive application that could take the user from one application where they are dropping careless keystrokes and switch the user to a context that requires a little more finesse&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;So, developers, don&amp;rsquo;t distract your users, let them keep their focus.&lt;/strong&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

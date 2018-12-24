@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Coding Coupon on T.J. Barbour</title>
+    <link>http://localhost:1313/tags/coding-coupon/</link>
+    <description>Recent content in Coding Coupon on T.J. Barbour</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Code released under the Apache 2.0 license..</copyright>
+    <lastBuildDate>Thu, 02 Jul 2015 01:43:44 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/coding-coupon/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Two for One</title>
+      <link>http://localhost:1313/post/Two-For-One/</link>
+      <pubDate>Thu, 02 Jul 2015 01:43:44 -0700</pubDate>
+      
+      <guid>http://localhost:1313/post/Two-For-One/</guid>
+      <description>&lt;p&gt;#Two-for-One&lt;/p&gt;
+
+&lt;p&gt;Getting people to adopt a less than 100% nessesary manual task? Impossible.
+To achieve this we must sweeten the deal, hence the &amp;ldquo;Two for one&amp;rdquo; technique, let me explain:&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

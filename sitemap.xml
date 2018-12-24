@@ -2,43 +2,94 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://tjbarbour.github.io/</loc>
-    <lastmod>2016-03-14T01:43:44-07:00</lastmod>
+    <loc>/tjbarbour.com/post/Spotfy-gate%20&amp;%20Intentionality/</loc>
+    <lastmod>2015-07-02T01:43:44-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tjbarbour.com/post/fatal-focus/</loc>
+    <lastmod>2015-07-02T01:43:44-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tjbarbour.com/about/</loc>
+    <lastmod>2015-07-02T01:12:08-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tjbarbour.com/about/</loc>
+    <lastmod>2015-07-02T01:12:08-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://tjbarbour.github.io/post/WhyFluentWins/</loc>
-    <lastmod>2016-03-14T01:43:44-07:00</lastmod>
+    <loc>/tjbarbour.com/tags/bad-dog/</loc>
+    <lastmod>2015-07-02T01:43:44-07:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://tjbarbour.github.io/post/Spotfy-gate%20&amp;%20Intentionality/</loc>
-    <lastmod>2016-02-07T01:43:44-07:00</lastmod>
+    <loc>/tjbarbour.com/categories/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://tjbarbour.github.io/post/fatal-focus/</loc>
-    <lastmod>2015-12-26T00:45:22-08:00</lastmod>
+    <loc>/tjbarbour.com/categories/design/</loc>
+    <lastmod>2015-07-02T01:43:44-07:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://tjbarbour.github.io/post/hello-world/</loc>
-    <lastmod>2015-12-25T00:45:22-08:00</lastmod>
+    <loc>/tjbarbour.com/tags/design/</loc>
+    <lastmod>2015-07-02T01:43:44-07:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://tjbarbour.github.io/post/draft/~resume/</loc>
-    <lastmod>2015-07-02T01:12:08-07:00</lastmod>
+    <loc>/tjbarbour.com/tags/misfire/</loc>
+    <lastmod>2015-07-02T01:43:44-07:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://tjbarbour.github.io/about/</loc>
-    <lastmod>2015-07-02T01:12:08-07:00</lastmod>
+    <loc>/tjbarbour.com/post/</loc>
+    <lastmod>2015-07-02T01:43:44-07:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://tjbarbour.github.io/post/draft/kickoff-processes/</loc>
+    <loc>/tjbarbour.com/tags/rant/</loc>
+    <lastmod>2015-07-02T01:43:44-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tjbarbour.com/</loc>
+    <lastmod>2015-07-02T01:43:44-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tjbarbour.com/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tjbarbour.com/categories/ux/</loc>
+    <lastmod>2015-07-02T01:43:44-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tjbarbour.com/tags/ux/</loc>
+    <lastmod>2015-07-02T01:43:44-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tjbarbour.com/tags/yes-im-doing-tag-jokes/</loc>
+    <lastmod>2015-07-02T01:43:44-07:00</lastmod>
+    <priority>0</priority>
   </url>
   
 </urlset>

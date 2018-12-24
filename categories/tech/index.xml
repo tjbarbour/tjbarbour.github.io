@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tech on T.J. Barbour</title>
+    <link>http://localhost:1313/categories/tech/</link>
+    <description>Recent content in Tech on T.J. Barbour</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Code released under the Apache 2.0 license..</copyright>
+    <lastBuildDate>Thu, 02 Jul 2015 01:43:44 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Backround YouTube</title>
+      <link>http://localhost:1313/post/PlayYoutubeBackground/</link>
+      <pubDate>Thu, 02 Jul 2015 01:43:44 -0700</pubDate>
+      
+      <guid>http://localhost:1313/post/PlayYoutubeBackground/</guid>
+      <description>&lt;p&gt;#Play-Youtube-Background
+&amp;gt;&amp;gt; Using Firefox for searching and PVStar for playlists, you can background play YouTube videos&lt;/p&gt;
+
+&lt;p&gt;#YouTube the final music frontier
+Spotify? iTunes? Tidal? Please….
+About any song you want to listen to us on YouTube, it&amp;rsquo;s needed by musicians for exposure and people upload dupes upon dupes of the same song making it harder for artists to take them all down (content Id not withstanding).  This makes YouTube a very exhaustive, though not quite as usable, music source.&lt;/p&gt;
+
+&lt;p&gt;#Background Play
+About that usability …
+Especially on mobile YouTube is a pain because you have to have the app open and your phone unlocked to &amp;ldquo;listen&amp;rdquo; to anything on YouTube.  This prevents you from using your phone for about anything else while running YouTube. Thankfully on Android, the app &amp;ldquo;PVStar&amp;rdquo; lets you play it in the background.
+&amp;gt;&amp;gt; Using Firefox for searching and PVStar for playlists, you can background play YouTube videos&lt;/p&gt;
+
+&lt;p&gt;PVStart can&amp;rsquo;t search anymore (Youtube API change..)&lt;/p&gt;
+
+&lt;p&gt;Using FFX mobile you can open videos in PVStar and add them to your list.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

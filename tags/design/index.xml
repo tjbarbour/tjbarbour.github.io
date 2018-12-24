@@ -2,51 +2,51 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Design on T.J. Barbour</title>
-    <link>http://tjbarbour.github.io/tags/design/</link>
+    <link>/tjbarbour.com/tags/design/index.xml</link>
     <description>Recent content in Design on T.J. Barbour</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>The information in this weblog is provided &#34;AS IS&#34; with no warranties, and confers no rights.  This weblog does not represent the thoughts, intentions, plans or strategies of my employer. It is solely my opinion.</copyright>
-    <lastBuildDate>Sun, 07 Feb 2016 01:43:44 -0700</lastBuildDate>
-    <atom:link href="http://tjbarbour.github.io/tags/design/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Code released under the Apache 2.0 license..</copyright>
+    <atom:link href="/tjbarbour.com/tags/design/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Spotifygate and Intentionality</title>
-      <link>http://tjbarbour.github.io/post/Spotfy-gate%20&amp;%20Intentionality/</link>
-      <pubDate>Sun, 07 Feb 2016 01:43:44 -0700</pubDate>
+      <link>/tjbarbour.com/post/Spotfy-gate%20&amp;%20Intentionality/</link>
+      <pubDate>Thu, 02 Jul 2015 01:43:44 -0700</pubDate>
       
-      <guid>http://tjbarbour.github.io/post/Spotfy-gate%20&amp;%20Intentionality/</guid>
+      <guid>/tjbarbour.com/post/Spotfy-gate%20&amp;%20Intentionality/</guid>
       <description>
+
+&lt;p&gt;&lt;em&gt;Image credit: &lt;a href=&#34;http://thenextweb.com/dd/2015/07/20/wow-thats-green/&#34;&gt;TNW&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Design decisions should be clear and carried out boldly to avoid giving a &amp;lsquo;weird&amp;rsquo; feel&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h1 id=&#34;spotifygate:47a22bdcbd94c3e0c234fbc5bd53d92a&#34;&gt;Spotifygate&lt;/h1&gt;
+&lt;h1 id=&#34;spotifygate&#34;&gt;Spotifygate&lt;/h1&gt;
 
-&lt;p&gt;Spotify got some backlash a while  ago when they made a subtle change in their logo.  Personally winced at my windows tray when something looked off with my Spotify logo&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Spotify got some backlash not long ago when they made a subtle change in their logo.  I personally winced at my windows tray when something looked off with my Spotify logo&amp;hellip;&lt;/p&gt;
 
-&lt;p&gt;Here&amp;rsquo;s the delta from a screencap:&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s the delta from the screencap seen above:
+&lt;img src=&#34;tjbarbour.com/img/spotify-delta.png&#34; alt=&#34;old spotify vs. new spotify&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://tjbarbour.github.io/img/spotify-delta.png&#34; alt=&#34;old spotify vs. new spotify&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Now, most people probably appreciate the new logo and slightly &amp;lsquo;flatter&amp;rsquo; color tone, but that&amp;rsquo;s not the point.  The change was so subtle that many people didn&amp;rsquo;t have the reaction &lt;em&gt;&amp;lsquo;KEWL LOGO UPDATE!&amp;rsquo;&lt;/em&gt; but instead they probably thought &lt;em&gt;&amp;lsquo;IZ MY MONITOR BROKE?&amp;rsquo;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Now, most people probably appreciate the new logo and slightly &amp;lsquo;flatter&amp;rsquo; color tone, but that&amp;rsquo;s not the point.  The cange was so subtle that many people didn&amp;rsquo;t have the reaction &lt;em&gt;&amp;lsquo;KEWL LOGO UPDATE!&amp;rsquo;&lt;/em&gt; but instead they probably thought &lt;em&gt;&amp;lsquo;IZ MY MONITOR BROKE?&amp;rsquo;&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;That was my reaction, &lt;strong&gt;I really wondered for a second if my monitor was on the fritz&lt;/strong&gt; because of the logo change.&lt;/p&gt;
 
-&lt;p&gt;According to the &lt;a href=&#34;http://thenextweb.com/dd/2015/07/20/wow-thats-green/&#34;&gt;TNW&lt;/a&gt; article (found via the great &lt;a href=&#34;http://www.underconsideration.com/brandnew/archives/spotifygate.php&#34;&gt;Brand New&lt;/a&gt;) Spotify has big design changes planned.  They also commented that they &amp;ldquo;didn&amp;rsquo;t communicate it clearly&amp;rdquo;.  I think that&amp;rsquo;s the issue, miscommunication, and it&amp;rsquo;s not that it required a press release, but rather that the change itself didn&amp;rsquo;t communicate well on its own.&lt;/p&gt;
+&lt;p&gt;According to the &lt;a href=&#34;http://thenextweb.com/dd/2015/07/20/wow-thats-green/&#34;&gt;TNW&lt;/a&gt; article (found via the great &lt;a href=&#34;http://www.underconsideration.com/brandnew/archives/spotifygate.php&#34;&gt;Brand New&lt;/a&gt;) Spotify has big design changes planned.  They also commented that they &amp;ldquo;didn&amp;rsquo;t [communicate] it clearly&amp;rdquo;.  I think that&amp;rsquo;s the issue, miscommunication, and its not that it required a press release, but rather that the change itself didn&amp;rsquo;t communicate well on its own.&lt;/p&gt;
 
-&lt;h1 id=&#34;intentionality:47a22bdcbd94c3e0c234fbc5bd53d92a&#34;&gt;Intentionality&lt;/h1&gt;
+&lt;h1 id=&#34;intentionality&#34;&gt;Intentionality&lt;/h1&gt;
 
 &lt;p&gt;One opinion I&amp;rsquo;ve formed in the (short) time I&amp;rsquo;ve worked in design is that &lt;strong&gt;your decisions should be clear and not wishy-washy&lt;/strong&gt;.  What do I mean? compare these 2 screnshots:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://tjbarbour.github.io/img/bootstrap-popover-overlap.png&#34; alt=&#34;2 bootstrap popovers, default above, &#39;overlapping&#39; adjustment below&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;tjbarbour.com/img/bootstrap-popover-overlap.png&#34; alt=&#34;2 bootstrap popovers, default above, &#39;overlapping&#39; adjustment below&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;This is from &lt;a href=&#34;http://getbootstrap.com/javascript/#popovers&#34;&gt;bootstrap documentation for the popover&lt;/a&gt;.  The top popover is the default style, where the popover &amp;lsquo;arrow&amp;rsquo; sits right next to the trigger element.  The screnshot below shows a slight modification where the arrow sits on top of the trigger element.  Why the modification?  The overlapping style creates a stronger indication of the relationship between the popover and the trigger, also its visually easier to pick up because of the contrast in this case.  The top (default) version just sets the popover next to the trigger, and doesn&amp;rsquo;t quite make a decision &amp;ldquo;Am I gonna hover to the side, or sit on top of the trigger? hmm&amp;hellip;&amp;rdquo;  Whereas in the modified example, its more obvious &amp;ldquo;Yup, I&amp;rsquo;m a popover, and I CAME FROM this trigger element right here, right under my arrow!&amp;rdquo;&lt;/p&gt;
 
 &lt;p&gt;It&amp;rsquo;s just my opinion, but I think that &lt;strong&gt;when you make design choices (and similarly develoment choices..) the more explicit you are, the easier it is for the user to follow where you are going and what you are doing&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;Maybe this is a reach, but I&amp;rsquo;d say that in the case of Spotify, if they were going to make &amp;lsquo;big design changes&amp;rsquo; they should&amp;rsquo;ve made it clear with a totally new logo, but by making a small (but still noticable) change, people were confused and couldn&amp;rsquo;t tell what they were trying to achieve.  At least there should have been some other change in conjunction with the color to make it obvious.&lt;/p&gt;
+&lt;p&gt;Maybe this is a reach, but I&amp;rsquo;d say that in the case of Spotify, if they were going to make &amp;lsquo;big design changes&amp;rsquo; they should&amp;rsquo;ve made it clear with a totally new logo, but by making a small (but still noticable) change, people were confused and couldn&amp;rsquo;t tell what they were trying to achieve.&lt;/p&gt;
 </description>
     </item>
     

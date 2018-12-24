@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abouts on T.J. Barbour</title>
+    <link>/tjbarbour.com/about/index.xml</link>
+    <description>Recent content in Abouts on T.J. Barbour</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Code released under the Apache 2.0 license..</copyright>
+    <lastBuildDate>Thu, 02 Jul 2015 01:12:08 -0700</lastBuildDate>
+    <atom:link href="/tjbarbour.com/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hello, I&#39;m T.J.</title>
+      <link>/tjbarbour.com/about/</link>
+      <pubDate>Thu, 02 Jul 2015 01:12:08 -0700</pubDate>
+      
+      <guid>/tjbarbour.com/about/</guid>
+      <description>&lt;div class=&#34;headshot img-circle&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;My name is T.J. Barbour.  I&amp;rsquo;m a software developer working in San Diego looking for a remote full-time position.&lt;/p&gt;
+
+&lt;p&gt;See more about my experience in my &lt;a href=&#34;https://dl.dropboxusercontent.com/u/4111188/TJ-Barbour-Resume.pdf&#34;&gt;resume&lt;/a&gt; or contact me using the links below.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

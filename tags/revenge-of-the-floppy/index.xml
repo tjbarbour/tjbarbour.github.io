@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Revenge Of The Floppy on T.J. Barbour</title>
+    <link>http://localhost:1313/tags/revenge-of-the-floppy/</link>
+    <description>Recent content in Revenge Of The Floppy on T.J. Barbour</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Code released under the Apache 2.0 license..</copyright>
+    <lastBuildDate>Thu, 02 Jul 2015 01:43:44 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/revenge-of-the-floppy/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Eyedropper, backwards?</title>
+      <link>http://localhost:1313/post/EydropperIconBackwards/</link>
+      <pubDate>Thu, 02 Jul 2015 01:43:44 -0700</pubDate>
+      
+      <guid>http://localhost:1313/post/EydropperIconBackwards/</guid>
+      <description>&lt;p&gt;I think more about dropping the color, not so much about picking the color&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
