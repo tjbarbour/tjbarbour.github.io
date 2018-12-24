@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>T.J. Barbour</title>
-    <link>https://www.tjbarbour.com/index.xml</link>
+    <link>/www.tjbarbour.com/index.xml</link>
     <description>Recent content on T.J. Barbour</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The information in this weblog is provided &#34;AS IS&#34; with no warranties, and confers no rights.  This weblog does not represent the thoughts, intentions, plans or strategies of my employer. It is solely my opinion.</copyright>
     <lastBuildDate>Sun, 20 Nov 2016 22:50:00 -0800</lastBuildDate>
-    <atom:link href="https://www.tjbarbour.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/www.tjbarbour.com/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Portfolio</title>
-      <link>https://www.tjbarbour.com/portfolio/</link>
+      <link>/www.tjbarbour.com/portfolio/</link>
       <pubDate>Sun, 20 Nov 2016 22:50:00 -0800</pubDate>
       
-      <guid>https://www.tjbarbour.com/portfolio/</guid>
+      <guid>/www.tjbarbour.com/portfolio/</guid>
       <description>
 
-&lt;p&gt;&lt;link href=&#34;https://www.tjbarbour.com/portfolio.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;link href=&#34;www.tjbarbour.com/portfolio.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;&gt;&lt;/p&gt;
 
 &lt;p&gt;Here&amp;rsquo;s a summary of the different projects I&amp;rsquo;ve worked on listed with the freshest up top&lt;/p&gt;
 
@@ -28,7 +28,7 @@
 
 &lt;p&gt;&lt;em&gt;[Lead] [UX] [Dev]&lt;/em&gt;&lt;br /&gt;
 &lt;strong&gt;[C#] [ASP.net MVC] [SQL Server] [jQuery] [Bootstrap] [SBAdmin] [Selenium]&lt;/strong&gt;
-&lt;img src=&#34;https://www.tjbarbour.com/img/screens/tools/metroville.png&#34; alt=&#34;Metroville Web Dashboard Screenshot&#34; /&gt;&lt;br /&gt;
+&lt;img src=&#34;www.tjbarbour.com/img/screens/tools/metroville.png&#34; alt=&#34;Metroville Web Dashboard Screenshot&#34; /&gt;&lt;br /&gt;
 Lead development of a lab dashboard system mainly for showing system update compliance.&lt;/p&gt;
 
 &lt;h3 id=&#34;main-contributions&#34;&gt;Main Contributions:&lt;/h3&gt;
@@ -56,13 +56,13 @@ Lead development of a lab dashboard system mainly for showing system update comp
 
 &lt;p&gt;&lt;em&gt;[Architect] [Lead] [UX] [Dev] [Schema]&lt;/em&gt;&lt;br /&gt;
 &lt;strong&gt;[C#] [ASP.net MVC] [NuGet] [jQuery] [Bootstrap] [HTML] [less] [Selenium] [FluentAutomation] [WCF] [Windows Services] [SQL Server] [PowerShell]&lt;/strong&gt;
-&lt;img src=&#34;https://www.tjbarbour.com/img/screens/portal/home.png&#34; alt=&#34;Portal Home&#34; /&gt;
-&lt;img src=&#34;https://www.tjbarbour.com/img/screens/portal/services.png&#34; alt=&#34;Portal Services Listing&#34; /&gt;
-&lt;img src=&#34;https://www.tjbarbour.com/img/screens/portal/otp.png&#34; alt=&#34;Portal Dual Factor OTP Sign In&#34; /&gt;
-&lt;img src=&#34;https://www.tjbarbour.com/img/screens/portal/admin-users.png&#34; alt=&#34;Portal Admin List Example&#34; /&gt;
-&lt;img src=&#34;https://www.tjbarbour.com/img/screens/portal/workflow-add-admin.png&#34; alt=&#34;Portal Workflow&#34; /&gt;
-&lt;img src=&#34;https://www.tjbarbour.com/img/screens/portal/contact-responsive.png&#34; alt=&#34;Portal Responsive Example Contact Page&#34; /&gt;
-&lt;img src=&#34;https://www.tjbarbour.com/img/screens/portal/responsive.png&#34; alt=&#34;Portal Responsive Example Contact Page&#34; /&gt;
+&lt;img src=&#34;www.tjbarbour.com/img/screens/portal/home.png&#34; alt=&#34;Portal Home&#34; /&gt;
+&lt;img src=&#34;www.tjbarbour.com/img/screens/portal/services.png&#34; alt=&#34;Portal Services Listing&#34; /&gt;
+&lt;img src=&#34;www.tjbarbour.com/img/screens/portal/otp.png&#34; alt=&#34;Portal Dual Factor OTP Sign In&#34; /&gt;
+&lt;img src=&#34;www.tjbarbour.com/img/screens/portal/admin-users.png&#34; alt=&#34;Portal Admin List Example&#34; /&gt;
+&lt;img src=&#34;www.tjbarbour.com/img/screens/portal/workflow-add-admin.png&#34; alt=&#34;Portal Workflow&#34; /&gt;
+&lt;img src=&#34;www.tjbarbour.com/img/screens/portal/contact-responsive.png&#34; alt=&#34;Portal Responsive Example Contact Page&#34; /&gt;
+&lt;img src=&#34;www.tjbarbour.com/img/screens/portal/responsive.png&#34; alt=&#34;Portal Responsive Example Contact Page&#34; /&gt;
 Architected the system based on a need to improve the security &amp;amp; ease of integration of authentication for our various web systems.  Lead the development team through several releases.&lt;/p&gt;
 
 &lt;h3 id=&#34;main-contributions-1&#34;&gt;Main Contributions:&lt;/h3&gt;
@@ -93,7 +93,7 @@ Architected the system based on a need to improve the security &amp;amp; ease of
 
 &lt;p&gt;&lt;em&gt;[Architect] [Lead] [UX] [Dev]&lt;/em&gt;&lt;br /&gt;
 &lt;strong&gt;[C#] [ASP.net MVC] [Razor] [AutoMapper] [jQuery] [Bootstrap] [DataTables.net] [HTML] [less] [NuGet]&lt;/strong&gt;
-&lt;img src=&#34;https://www.tjbarbour.com/img/screens/optimus/layers.png&#34; alt=&#34;Optimus Layers&#34; /&gt;&lt;br /&gt;
+&lt;img src=&#34;www.tjbarbour.com/img/screens/optimus/layers.png&#34; alt=&#34;Optimus Layers&#34; /&gt;&lt;br /&gt;
 Conceptualized a web framework after noticing the repetitive nature of rich web applications and the need for:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -129,7 +129,7 @@ Conceptualized a web framework after noticing the repetitive nature of rich web 
 
 &lt;p&gt;&lt;em&gt;[Architect] [Lead] [UX] [Dev]&lt;/em&gt;&lt;br /&gt;
 &lt;strong&gt;[C#] [ASP.net MVC] [Razor] [ASP.net WebForms] [AutoMapper] [jQuery] [Bootstrap] [DataTables.net] [HTML] [less] [NuGet]&lt;/strong&gt;&lt;br /&gt;
-&lt;img src=&#34;https://www.tjbarbour.com/img/screens/mirage/consistent.png&#34; alt=&#34;Consistent Across Applications&#34; /&gt;&lt;br /&gt;
+&lt;img src=&#34;www.tjbarbour.com/img/screens/mirage/consistent.png&#34; alt=&#34;Consistent Across Applications&#34; /&gt;&lt;br /&gt;
 Worked with a small team to rapidly define a visual style standard for our department and then baked it into a NuGet package for easy consumption and use in our applications&lt;/p&gt;
 
 &lt;h3 id=&#34;main-contributions-3&#34;&gt;Main Contributions:&lt;/h3&gt;
@@ -160,7 +160,7 @@ Worked with a small team to rapidly define a visual style standard for our depar
 
 &lt;p&gt;&lt;em&gt;[Architect] [Lead] [UX] [Dev]&lt;/em&gt;&lt;br /&gt;
 &lt;strong&gt;[C#] [WinForms] [Selenium]&lt;/strong&gt;&lt;br /&gt;
-&lt;img src=&#34;https://www.tjbarbour.com/img/screens/webrobot/robot.png&#34; alt=&#34;WebRobot Configuration Screen&#34; /&gt;&lt;br /&gt;
+&lt;img src=&#34;www.tjbarbour.com/img/screens/webrobot/robot.png&#34; alt=&#34;WebRobot Configuration Screen&#34; /&gt;&lt;br /&gt;
 Created a new version of an automation tool used to submit batch orders to a third party website.&lt;/p&gt;
 
 &lt;h3 id=&#34;main-contributions-4&#34;&gt;Main Contributions:&lt;/h3&gt;
@@ -188,9 +188,9 @@ Created a new version of an automation tool used to submit batch orders to a thi
 &lt;p&gt;&lt;em&gt;[UX] [Dev]&lt;/em&gt;&lt;br /&gt;
 &lt;strong&gt;[Java] [Android]&lt;/strong&gt;&lt;br /&gt;
 &lt;a href=&#34;http://seelab.ucsd.edu/health/overview.shtml&#34;&gt;Homepage&lt;/a&gt;&lt;br /&gt;
-&lt;img src=&#34;https://www.tjbarbour.com/img/screens/citisense/timescreen.png&#34; alt=&#34;Android Home AQI Screen&#34; /&gt;
-&lt;img src=&#34;https://www.tjbarbour.com/img/screens/citisense/full-graph.png&#34; alt=&#34;Android Graph&#34; /&gt;
-&lt;img src=&#34;https://www.tjbarbour.com/img/screens/citisense/full-graph-landscape.png&#34; alt=&#34;Android Graph Landscape&#34; /&gt;&lt;br /&gt;
+&lt;img src=&#34;www.tjbarbour.com/img/screens/citisense/timescreen.png&#34; alt=&#34;Android Home AQI Screen&#34; /&gt;
+&lt;img src=&#34;www.tjbarbour.com/img/screens/citisense/full-graph.png&#34; alt=&#34;Android Graph&#34; /&gt;
+&lt;img src=&#34;www.tjbarbour.com/img/screens/citisense/full-graph-landscape.png&#34; alt=&#34;Android Graph Landscape&#34; /&gt;&lt;br /&gt;
 Contributed to development of an Android app which surfaced Air Quality data collected through a portable sensor for a university research project&lt;/p&gt;
 
 &lt;h3 id=&#34;main-contributions-5&#34;&gt;Main Contributions:&lt;/h3&gt;
@@ -215,9 +215,9 @@ Contributed to development of an Android app which surfaced Air Quality data col
 
 &lt;p&gt;&lt;em&gt;[Lead] [UX] [Dev] [Schema]&lt;/em&gt;&lt;br /&gt;
 &lt;strong&gt;[C#] [ASP.net MVC] [Razor] [AutoMapper] [jQuery] [Bootstrap] [DataTables.net] [HTML] [CSS] [NuGet] [WCF] [Windows Services] [SQL Server]&lt;/strong&gt;&lt;br /&gt;
-&lt;img src=&#34;https://www.tjbarbour.com/img/screens/uls/homepage.png&#34; alt=&#34;Homepage With Widgets&#34; /&gt;
-&lt;img src=&#34;https://www.tjbarbour.com/img/screens/uls/create.png&#34; alt=&#34;Form With Validation&#34; /&gt;
-&lt;img src=&#34;https://www.tjbarbour.com/img/screens/uls/modal.png&#34; alt=&#34;Modal Dialog&#34; /&gt;&lt;br /&gt;
+&lt;img src=&#34;www.tjbarbour.com/img/screens/uls/homepage.png&#34; alt=&#34;Homepage With Widgets&#34; /&gt;
+&lt;img src=&#34;www.tjbarbour.com/img/screens/uls/create.png&#34; alt=&#34;Form With Validation&#34; /&gt;
+&lt;img src=&#34;www.tjbarbour.com/img/screens/uls/modal.png&#34; alt=&#34;Modal Dialog&#34; /&gt;&lt;br /&gt;
 Lead development of a Feature Licensing system which allowed product managers to dynamically define features, users to generate licenses &amp;amp; administrators to run reports&lt;/p&gt;
 
 &lt;h3 id=&#34;main-contributions-6&#34;&gt;Main Contributions:&lt;/h3&gt;
@@ -245,9 +245,9 @@ Lead development of a Feature Licensing system which allowed product managers to
 
 &lt;p&gt;&lt;em&gt;[UX] [Dev]&lt;/em&gt;&lt;br /&gt;
 &lt;strong&gt;[C#] [ASP.net MVC] [jQuery] [ASP.net WebForms] [HTML] [CSS] [Silverlight] [Windows Services] [SQL Server]&lt;/strong&gt;&lt;br /&gt;
-&lt;img src=&#34;https://www.tjbarbour.com/img/screens/pkiw/agree.png&#34; alt=&#34;Terms Agreement&#34; /&gt;
-&lt;img src=&#34;https://www.tjbarbour.com/img/screens/pkiw/form.png&#34; alt=&#34;Terms Agreement&#34; /&gt;
-&lt;img src=&#34;https://www.tjbarbour.com/img/screens/pkiw/list.png&#34; alt=&#34;Terms Agreement&#34; /&gt;&lt;br /&gt;
+&lt;img src=&#34;www.tjbarbour.com/img/screens/pkiw/agree.png&#34; alt=&#34;Terms Agreement&#34; /&gt;
+&lt;img src=&#34;www.tjbarbour.com/img/screens/pkiw/form.png&#34; alt=&#34;Terms Agreement&#34; /&gt;
+&lt;img src=&#34;www.tjbarbour.com/img/screens/pkiw/list.png&#34; alt=&#34;Terms Agreement&#34; /&gt;&lt;br /&gt;
 Contributed to UI development of a Certificate Authority management system including customer facing portal &amp;amp; administration website.&lt;/p&gt;
 
 &lt;h3 id=&#34;main-contributions-7&#34;&gt;Main Contributions:&lt;/h3&gt;
@@ -274,8 +274,8 @@ Contributed to UI development of a Certificate Authority management system inclu
 
 &lt;p&gt;&lt;em&gt;[UX] [Dev]&lt;/em&gt;&lt;br /&gt;
 &lt;strong&gt;[C#] [ASP.net MVC] [ASP.net WebForms] [jQuery] [HTML] [CSS] [Windows Services] [SQL Server]&lt;/strong&gt;&lt;br /&gt;
-&lt;img src=&#34;https://www.tjbarbour.com/img/screens/prism/generate.png&#34; alt=&#34;Dynamic Code Signing Form (1/2)&#34; /&gt;
-&lt;img src=&#34;https://www.tjbarbour.com/img/screens/prism/generate2.png&#34; alt=&#34;Dynamic Code Signing Form (2/2)&#34; /&gt;&lt;br /&gt;
+&lt;img src=&#34;www.tjbarbour.com/img/screens/prism/generate.png&#34; alt=&#34;Dynamic Code Signing Form (1/2)&#34; /&gt;
+&lt;img src=&#34;www.tjbarbour.com/img/screens/prism/generate2.png&#34; alt=&#34;Dynamic Code Signing Form (2/2)&#34; /&gt;&lt;br /&gt;
 Contributed to UI &amp;amp; backend platform-custom plugins to support generating code signatures and other secure data.&lt;/p&gt;
 
 &lt;h3 id=&#34;main-contributions-8&#34;&gt;Main Contributions:&lt;/h3&gt;
@@ -302,7 +302,7 @@ Contributed to UI &amp;amp; backend platform-custom plugins to support generatin
 
 &lt;p&gt;&lt;em&gt;[UX] [Dev]&lt;/em&gt;&lt;br /&gt;
 &lt;strong&gt;[C#] [Windows Services] [WCF]&lt;/strong&gt;&lt;br /&gt;
-&lt;img src=&#34;https://www.tjbarbour.com/img/screens/tools/locksmith.jpg&#34; alt=&#34;Locksmith Monitor Screenshot&#34; /&gt;&lt;br /&gt;
+&lt;img src=&#34;www.tjbarbour.com/img/screens/tools/locksmith.jpg&#34; alt=&#34;Locksmith Monitor Screenshot&#34; /&gt;&lt;br /&gt;
 Sole developer of a service for pre-generating data used to speed up other PKI operations&lt;/p&gt;
 
 &lt;h3 id=&#34;main-contributions-9&#34;&gt;Main Contributions:&lt;/h3&gt;
@@ -329,8 +329,8 @@ Sole developer of a service for pre-generating data used to speed up other PKI o
 &lt;h2 id=&#34;portable-fare-device-printer&#34;&gt;Portable Fare Device &amp;amp; Printer&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;[C++] [MFC]&lt;/strong&gt;&lt;br /&gt;
-&lt;img src=&#34;https://www.tjbarbour.com/img/screens/hhu/pda.jpg&#34; alt=&#34;Windows Pocket PC&#34; /&gt;
-&lt;img src=&#34;https://www.tjbarbour.com/img/screens/hhu/printer.jpg&#34; alt=&#34;Bluetooth Printer&#34; /&gt;
+&lt;img src=&#34;www.tjbarbour.com/img/screens/hhu/pda.jpg&#34; alt=&#34;Windows Pocket PC&#34; /&gt;
+&lt;img src=&#34;www.tjbarbour.com/img/screens/hhu/printer.jpg&#34; alt=&#34;Bluetooth Printer&#34; /&gt;
 I helped with development of fare/ticket auditing for an NFC transit system on a hand held PDA device with the ability to print out receipts&lt;/p&gt;
 
 &lt;hr /&gt;
@@ -342,7 +342,7 @@ I helped with development of fare/ticket auditing for an NFC transit system on a
 &lt;h2 id=&#34;filebridge-browser-initiated-network-uploads&#34;&gt;Filebridge - Browser Initiated Network Uploads&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;[C#] [PowerShell] [jQuery]&lt;/strong&gt;
-&lt;img src=&#34;https://www.tjbarbour.com/img/screens/filebridge/prompt.png&#34; alt=&#34;Network File Copies Launched from a Web Browser&#34; /&gt;&lt;br /&gt;
+&lt;img src=&#34;www.tjbarbour.com/img/screens/filebridge/prompt.png&#34; alt=&#34;Network File Copies Launched from a Web Browser&#34; /&gt;&lt;br /&gt;
 This prototype helped build a system where a website could initiate a network file transfer to improve the performance of file uploads&lt;/p&gt;
 
 &lt;hr /&gt;
@@ -350,8 +350,8 @@ This prototype helped build a system where a website could initiate a network fi
 &lt;h2 id=&#34;axis-alignment-tool&#34;&gt;Axis alignment tool&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;[C#] [WinForms]&lt;/strong&gt;&lt;br /&gt;
-&lt;img src=&#34;https://www.tjbarbour.com/img/screens/axis/axis-icon.png&#34; alt=&#34;Axis&#34; /&gt;
-&lt;img src=&#34;https://www.tjbarbour.com/img/screens/axis/axis.png&#34; alt=&#34;Two Instances with Guidelines&#34; /&gt;&lt;br /&gt;
+&lt;img src=&#34;www.tjbarbour.com/img/screens/axis/axis-icon.png&#34; alt=&#34;Axis&#34; /&gt;
+&lt;img src=&#34;www.tjbarbour.com/img/screens/axis/axis.png&#34; alt=&#34;Two Instances with Guidelines&#34; /&gt;&lt;br /&gt;
 This tool overlays a colored axis on the screen to help with aligning UI elements, documents, etc.&lt;/p&gt;
 
 &lt;hr /&gt;
@@ -359,7 +359,7 @@ This tool overlays a colored axis on the screen to help with aligning UI element
 &lt;h2 id=&#34;regex-command-line-tool&#34;&gt;RegEx Command Line Tool&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;[C#]&lt;/strong&gt;&lt;br /&gt;
-&lt;img src=&#34;https://www.tjbarbour.com/img/screens/reggie/reggie.png&#34; alt=&#34;Running RegEx to search in a file&#34; /&gt;&lt;br /&gt;
+&lt;img src=&#34;www.tjbarbour.com/img/screens/reggie/reggie.png&#34; alt=&#34;Running RegEx to search in a file&#34; /&gt;&lt;br /&gt;
 This custom RegEx command line tool (affectionately referred to as &amp;lsquo;Reggie&amp;rsquo;) allowd for testing regular expressions at the command line and running them against files to perform complex searches and pipe the results to logs or other programs&lt;/p&gt;
 
 &lt;hr /&gt;
@@ -383,17 +383,17 @@ Ok so, &lt;em&gt;one time&lt;/em&gt;, our internal LAN chat system was down for 
     &lt;span class=&#34;label label-primary&#34;&gt;Bootstrap&lt;/span&gt;
 &lt;/div&gt;
 &lt;div class=&#34;row&#34;&gt;
-    &lt;img src=&#34;https://www.tjbarbour.com/img/screens/tools/metroville.png&#34; alt=&#34;Metroville Web Dashborad Screenshot&#34;&gt;
+    &lt;img src=&#34;www.tjbarbour.com/img/screens/tools/metroville.png&#34; alt=&#34;Metroville Web Dashborad Screenshot&#34;&gt;
 &lt;/div&gt; --&gt;
 </description>
     </item>
     
     <item>
       <title>Why Fluent Wins</title>
-      <link>https://www.tjbarbour.com/post/WhyFluentWins/</link>
+      <link>/www.tjbarbour.com/post/WhyFluentWins/</link>
       <pubDate>Mon, 14 Mar 2016 01:43:44 -0700</pubDate>
       
-      <guid>https://www.tjbarbour.com/post/WhyFluentWins/</guid>
+      <guid>/www.tjbarbour.com/post/WhyFluentWins/</guid>
       <description>
 
 &lt;blockquote&gt;
@@ -436,7 +436,7 @@ Ok so, &lt;em&gt;one time&lt;/em&gt;, our internal LAN chat system was down for 
 
 &lt;p&gt;When reading this code, the order is almost completely reversed.  Also, when writing it, we keep to jumping around to &amp;ldquo;surround&amp;rdquo; one function with another, watch:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://www.tjbarbour.com/img/fluent-bad.gif&#34; alt=&#34;traditional functions&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;www.tjbarbour.com/img/fluent-bad.gif&#34; alt=&#34;traditional functions&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Of course, this can be partially remedied with intermediate variables, but you may not have any use for them.&lt;/p&gt;
 
@@ -491,7 +491,7 @@ Ok so, &lt;em&gt;one time&lt;/em&gt;, our internal LAN chat system was down for 
 
 &lt;p&gt;See how much easier it is to follow?  You can read through the conversion left to right and typing is much smoother as well, watch:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://www.tjbarbour.com/img/fluent-good.gif&#34; alt=&#34;fluent interface&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;www.tjbarbour.com/img/fluent-good.gif&#34; alt=&#34;fluent interface&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;You could say this style of API is more &amp;ldquo;ergonomic&amp;rdquo; for the consumer.  You can achieve this in C# using &lt;a href=&#34;https://msdn.microsoft.com/en-us/library/bb383977.aspx&#34;&gt;Extension &lt;/a&gt; &lt;a href=&#34;http://www.dotnetperls.com/extension&#34;&gt;Methods&lt;/a&gt;, which I&amp;rsquo;ll have to write about soon :)&lt;/p&gt;
 
@@ -503,10 +503,10 @@ Ok so, &lt;em&gt;one time&lt;/em&gt;, our internal LAN chat system was down for 
     
     <item>
       <title>Spotifygate and Intentionality</title>
-      <link>https://www.tjbarbour.com/post/Spotfy-gate%20&amp;%20Intentionality/</link>
+      <link>/www.tjbarbour.com/post/Spotfy-gate%20&amp;%20Intentionality/</link>
       <pubDate>Sun, 07 Feb 2016 01:43:44 -0700</pubDate>
       
-      <guid>https://www.tjbarbour.com/post/Spotfy-gate%20&amp;%20Intentionality/</guid>
+      <guid>/www.tjbarbour.com/post/Spotfy-gate%20&amp;%20Intentionality/</guid>
       <description>
 
 &lt;blockquote&gt;
@@ -519,7 +519,7 @@ Ok so, &lt;em&gt;one time&lt;/em&gt;, our internal LAN chat system was down for 
 
 &lt;p&gt;Here&amp;rsquo;s the delta from a screencap:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://www.tjbarbour.com/img/spotify-delta.png&#34; alt=&#34;old spotify vs. new spotify&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;www.tjbarbour.com/img/spotify-delta.png&#34; alt=&#34;old spotify vs. new spotify&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Now, most people probably appreciate the new logo and slightly &amp;lsquo;flatter&amp;rsquo; color tone, but that&amp;rsquo;s not the point.  The change was so subtle that many people didn&amp;rsquo;t have the reaction &lt;em&gt;&amp;lsquo;KEWL LOGO UPDATE!&amp;rsquo;&lt;/em&gt; but instead they probably thought &lt;em&gt;&amp;lsquo;IZ MY MONITOR BROKE?&amp;rsquo;&lt;/em&gt;&lt;/p&gt;
 
@@ -531,7 +531,7 @@ Ok so, &lt;em&gt;one time&lt;/em&gt;, our internal LAN chat system was down for 
 
 &lt;p&gt;One opinion I&amp;rsquo;ve formed in the (short) time I&amp;rsquo;ve worked in design is that &lt;strong&gt;your decisions should be clear and not wishy-washy&lt;/strong&gt;.  What do I mean? compare these 2 screnshots:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://www.tjbarbour.com/img/bootstrap-popover-overlap.png&#34; alt=&#34;2 bootstrap popovers, default above, &#39;overlapping&#39; adjustment below&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;www.tjbarbour.com/img/bootstrap-popover-overlap.png&#34; alt=&#34;2 bootstrap popovers, default above, &#39;overlapping&#39; adjustment below&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;This is from &lt;a href=&#34;http://getbootstrap.com/javascript/#popovers&#34;&gt;bootstrap documentation for the popover&lt;/a&gt;.  The top popover is the default style, where the popover &amp;lsquo;arrow&amp;rsquo; sits right next to the trigger element.  The screnshot below shows a slight modification where the arrow sits on top of the trigger element.  Why the modification?  The overlapping style creates a stronger indication of the relationship between the popover and the trigger, also its visually easier to pick up because of the contrast in this case.  The top (default) version just sets the popover next to the trigger, and doesn&amp;rsquo;t quite make a decision &amp;ldquo;Am I gonna hover to the side, or sit on top of the trigger? hmm&amp;hellip;&amp;rdquo;  Whereas in the modified example, its more obvious &amp;ldquo;Yup, I&amp;rsquo;m a popover, and I CAME FROM this trigger element right here, right under my arrow!&amp;rdquo;&lt;/p&gt;
 
@@ -543,10 +543,10 @@ Ok so, &lt;em&gt;one time&lt;/em&gt;, our internal LAN chat system was down for 
     
     <item>
       <title>Fatal Focus</title>
-      <link>https://www.tjbarbour.com/post/fatal-focus/</link>
+      <link>/www.tjbarbour.com/post/fatal-focus/</link>
       <pubDate>Sat, 26 Dec 2015 00:45:22 -0800</pubDate>
       
-      <guid>https://www.tjbarbour.com/post/fatal-focus/</guid>
+      <guid>/www.tjbarbour.com/post/fatal-focus/</guid>
       <description>
 
 &lt;blockquote&gt;
@@ -555,14 +555,14 @@ Ok so, &lt;em&gt;one time&lt;/em&gt;, our internal LAN chat system was down for 
 
 &lt;h1 id=&#34;someone-at-redmond-owes-me-an-hour&#34;&gt;&lt;em&gt;Someone at Redmond owes me an hour&amp;hellip;&lt;/em&gt;&lt;/h1&gt;
 
-&lt;p&gt;Ok, but really, sometimes our UX decisions can have unfortunate consequences.  There I was, working on an &lt;a href=&#34;https://www.tjbarbour.com/resume/&#34;&gt;important document&lt;/a&gt;, typing away&amp;hellip; ready to finish another line.. (period).. (ent&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Ok, but really, sometimes our UX decisions can have unfortunate consequences.  There I was, working on an &lt;a href=&#34;www.tjbarbour.com/resume/&#34;&gt;important document&lt;/a&gt;, typing away&amp;hellip; ready to finish another line.. (period).. (ent&amp;hellip;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;When suddenly&lt;/em&gt; something like this popped up:
-&lt;img src=&#34;https://www.tjbarbour.com/img/updates_yey.png&#34; alt=&#34;Updates, one accidental keystroke away...&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;www.tjbarbour.com/img/updates_yey.png&#34; alt=&#34;Updates, one accidental keystroke away...&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Now sure, I probably could&amp;rsquo;ve changed a setting somewhere to not propmt me for updates but in any case, this little dialog just snatched my &lt;a href=&#34;https://en.wikipedia.org/wiki/Focus_(computing)&#34;&gt;focus&lt;/a&gt; away, and that last keystroke I was about to hit? A simple [ENTER] and I went from productive to&amp;hellip;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://www.tjbarbour.com/img/updates_doomed.png&#34; alt=&#34;...doomed, updates&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;www.tjbarbour.com/img/updates_doomed.png&#34; alt=&#34;...doomed, updates&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;This may be an exaggeration, but it magnifies &lt;strong&gt;how dangerous it can be to take focus away from your users!&lt;/strong&gt;  Imagine an application that just grabbed your mouse and pointed it to wherever they pleased?  That&amp;rsquo;s essentially what you are doing when you take the focus away.&lt;/p&gt;
 
@@ -586,10 +586,10 @@ Ok so, &lt;em&gt;one time&lt;/em&gt;, our internal LAN chat system was down for 
     
     <item>
       <title>Hello World!</title>
-      <link>https://www.tjbarbour.com/post/hello-world/</link>
+      <link>/www.tjbarbour.com/post/hello-world/</link>
       <pubDate>Fri, 25 Dec 2015 00:45:22 -0800</pubDate>
       
-      <guid>https://www.tjbarbour.com/post/hello-world/</guid>
+      <guid>/www.tjbarbour.com/post/hello-world/</guid>
       <description>
 
 &lt;h1 id=&#34;hello-world&#34;&gt;Hello World!&lt;/h1&gt;
@@ -602,10 +602,10 @@ Ok so, &lt;em&gt;one time&lt;/em&gt;, our internal LAN chat system was down for 
     
     <item>
       <title>Resume - T.J. Barbour</title>
-      <link>https://www.tjbarbour.com/post/draft/~resume/</link>
+      <link>/www.tjbarbour.com/post/draft/~resume/</link>
       <pubDate>Thu, 02 Jul 2015 01:12:08 -0700</pubDate>
       
-      <guid>https://www.tjbarbour.com/post/draft/~resume/</guid>
+      <guid>/www.tjbarbour.com/post/draft/~resume/</guid>
       <description>
 
 &lt;h1 id=&#34;t-j-barbour-s-resume&#34;&gt;T.J. Barbour&amp;rsquo;s Resume&lt;/h1&gt;
@@ -730,10 +730,10 @@ www.tjbarbour.com&lt;/p&gt;
     
     <item>
       <title>about</title>
-      <link>https://www.tjbarbour.com/about/</link>
+      <link>/www.tjbarbour.com/about/</link>
       <pubDate>Thu, 02 Jul 2015 01:12:08 -0700</pubDate>
       
-      <guid>https://www.tjbarbour.com/about/</guid>
+      <guid>/www.tjbarbour.com/about/</guid>
       <description>&lt;p&gt;My name is T.J. Barbour.  I&amp;rsquo;m a software developer working in San Diego looking for a remote full-time position.&lt;/p&gt;
 
 &lt;p&gt;See more about my experience in my &lt;a href=&#34;https://dl.dropboxusercontent.com/u/4111188/TJ-Barbour-Resume.pdf&#34;&gt;resume&lt;/a&gt; or contact me using the links below.&lt;/p&gt;
@@ -742,19 +742,19 @@ www.tjbarbour.com&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>https://www.tjbarbour.com/post/draft/c-sharp-expressions/</link>
+      <link>/www.tjbarbour.com/post/draft/c-sharp-expressions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.tjbarbour.com/post/draft/c-sharp-expressions/</guid>
+      <guid>/www.tjbarbour.com/post/draft/c-sharp-expressions/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>https://www.tjbarbour.com/post/draft/c-sharp-initialization-order/</link>
+      <link>/www.tjbarbour.com/post/draft/c-sharp-initialization-order/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.tjbarbour.com/post/draft/c-sharp-initialization-order/</guid>
+      <guid>/www.tjbarbour.com/post/draft/c-sharp-initialization-order/</guid>
       <description>&lt;p&gt;#Init order
 - Ctor code execution
 - Base code execution
@@ -769,10 +769,10 @@ www.tjbarbour.com&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>https://www.tjbarbour.com/post/draft/step-up-cmd/</link>
+      <link>/www.tjbarbour.com/post/draft/step-up-cmd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.tjbarbour.com/post/draft/step-up-cmd/</guid>
+      <guid>/www.tjbarbour.com/post/draft/step-up-cmd/</guid>
       <description>&lt;p&gt;#Step up your CMD game&lt;/p&gt;
 
 &lt;p&gt;Create a directory for your scripts, I suggest &amp;ldquo;C:\Scripts&amp;rdquo;&lt;/p&gt;
@@ -806,10 +806,10 @@ www.tjbarbour.com&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>https://www.tjbarbour.com/post/revisit/kickoff-processes/</link>
+      <link>/www.tjbarbour.com/post/revisit/kickoff-processes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.tjbarbour.com/post/revisit/kickoff-processes/</guid>
+      <guid>/www.tjbarbour.com/post/revisit/kickoff-processes/</guid>
       <description>
 
 &lt;h1 id=&#34;fun-ways-to-kickoff-system-design-tasks&#34;&gt;Fun ways to kickoff system design tasks&lt;/h1&gt;
