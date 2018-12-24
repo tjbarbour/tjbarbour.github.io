@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on T.J. Barbour</title>
-    <link>/tjbarbour.com/post/index.xml</link>
+    <link>https://www.tjbarbour.com/post/index.xml</link>
     <description>Recent content in Posts on T.J. Barbour</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Code released under the Apache 2.0 license..</copyright>
     <lastBuildDate>Thu, 02 Jul 2015 01:43:44 -0700</lastBuildDate>
-    <atom:link href="/tjbarbour.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.tjbarbour.com/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Spotifygate and Intentionality</title>
-      <link>/tjbarbour.com/post/Spotfy-gate%20&amp;%20Intentionality/</link>
+      <link>https://www.tjbarbour.com/post/Spotfy-gate%20&amp;%20Intentionality/</link>
       <pubDate>Thu, 02 Jul 2015 01:43:44 -0700</pubDate>
       
-      <guid>/tjbarbour.com/post/Spotfy-gate%20&amp;%20Intentionality/</guid>
+      <guid>https://www.tjbarbour.com/post/Spotfy-gate%20&amp;%20Intentionality/</guid>
       <description>
 
 &lt;p&gt;&lt;em&gt;Image credit: &lt;a href=&#34;http://thenextweb.com/dd/2015/07/20/wow-thats-green/&#34;&gt;TNW&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
@@ -29,7 +29,7 @@
 &lt;p&gt;Spotify got some backlash not long ago when they made a subtle change in their logo.  I personally winced at my windows tray when something looked off with my Spotify logo&amp;hellip;&lt;/p&gt;
 
 &lt;p&gt;Here&amp;rsquo;s the delta from the screencap seen above:
-&lt;img src=&#34;tjbarbour.com/img/spotify-delta.png&#34; alt=&#34;old spotify vs. new spotify&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://www.tjbarbour.com/img/spotify-delta.png&#34; alt=&#34;old spotify vs. new spotify&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Now, most people probably appreciate the new logo and slightly &amp;lsquo;flatter&amp;rsquo; color tone, but that&amp;rsquo;s not the point.  The cange was so subtle that many people didn&amp;rsquo;t have the reaction &lt;em&gt;&amp;lsquo;KEWL LOGO UPDATE!&amp;rsquo;&lt;/em&gt; but instead they probably thought &lt;em&gt;&amp;lsquo;IZ MY MONITOR BROKE?&amp;rsquo;&lt;/em&gt;&lt;/p&gt;
 
@@ -41,7 +41,7 @@
 
 &lt;p&gt;One opinion I&amp;rsquo;ve formed in the (short) time I&amp;rsquo;ve worked in design is that &lt;strong&gt;your decisions should be clear and not wishy-washy&lt;/strong&gt;.  What do I mean? compare these 2 screnshots:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;tjbarbour.com/img/bootstrap-popover-overlap.png&#34; alt=&#34;2 bootstrap popovers, default above, &#39;overlapping&#39; adjustment below&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.tjbarbour.com/img/bootstrap-popover-overlap.png&#34; alt=&#34;2 bootstrap popovers, default above, &#39;overlapping&#39; adjustment below&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;This is from &lt;a href=&#34;http://getbootstrap.com/javascript/#popovers&#34;&gt;bootstrap documentation for the popover&lt;/a&gt;.  The top popover is the default style, where the popover &amp;lsquo;arrow&amp;rsquo; sits right next to the trigger element.  The screnshot below shows a slight modification where the arrow sits on top of the trigger element.  Why the modification?  The overlapping style creates a stronger indication of the relationship between the popover and the trigger, also its visually easier to pick up because of the contrast in this case.  The top (default) version just sets the popover next to the trigger, and doesn&amp;rsquo;t quite make a decision &amp;ldquo;Am I gonna hover to the side, or sit on top of the trigger? hmm&amp;hellip;&amp;rdquo;  Whereas in the modified example, its more obvious &amp;ldquo;Yup, I&amp;rsquo;m a popover, and I CAME FROM this trigger element right here, right under my arrow!&amp;rdquo;&lt;/p&gt;
 
@@ -53,10 +53,10 @@
     
     <item>
       <title>fatal focus</title>
-      <link>/tjbarbour.com/post/fatal-focus/</link>
+      <link>https://www.tjbarbour.com/post/fatal-focus/</link>
       <pubDate>Thu, 02 Jul 2015 01:43:44 -0700</pubDate>
       
-      <guid>/tjbarbour.com/post/fatal-focus/</guid>
+      <guid>https://www.tjbarbour.com/post/fatal-focus/</guid>
       <description>
 
 &lt;blockquote&gt;
@@ -65,14 +65,14 @@
 
 &lt;h1 id=&#34;someone-at-redmond-owes-me-an-hour&#34;&gt;&lt;em&gt;Someone at Redmond owes me an hour&amp;hellip;&lt;/em&gt;&lt;/h1&gt;
 
-&lt;p&gt;Ok, but really, sometimes our UX decisions can have unfortunate consequences.  There I was, working on an &lt;a href=&#34;tjbarbour.com/resume/&#34;&gt;important document&lt;/a&gt;, typing away&amp;hellip; ready to finish another line.. (period).. (ent&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Ok, but really, sometimes our UX decisions can have unfortunate consequences.  There I was, working on an &lt;a href=&#34;https://www.tjbarbour.com/resume/&#34;&gt;important document&lt;/a&gt;, typing away&amp;hellip; ready to finish another line.. (period).. (ent&amp;hellip;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;When suddenly&lt;/em&gt; something like this popped up:
-&lt;img src=&#34;tjbarbour.com/img/updates_yey.png&#34; alt=&#34;Updates, one accidental keystroke away...&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://www.tjbarbour.com/img/updates_yey.png&#34; alt=&#34;Updates, one accidental keystroke away...&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Now sure, I probably could&amp;rsquo;ve changed a setting somewhere to not propmt me for updates but in any case, this little dialog just snatched my &lt;a href=&#34;https://en.wikipedia.org/wiki/Focus_(computing)&#34;&gt;focus&lt;/a&gt; away, and that last keystroke I was about to hit? A simple [ENTER] and I went from productive to&amp;hellip;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;tjbarbour.com/img/updates_doomed.png&#34; alt=&#34;...doomed, updates&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.tjbarbour.com/img/updates_doomed.png&#34; alt=&#34;...doomed, updates&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;This may be an exaggeration, but it magnifies &lt;strong&gt;how dangerous it can be to take focus away from your users!&lt;/strong&gt;  Imagine an application that just grabbed your mouse and pointed it to wherever they pleased?  That&amp;rsquo;s essentially what you are doing when you take the focus away.&lt;/p&gt;
 

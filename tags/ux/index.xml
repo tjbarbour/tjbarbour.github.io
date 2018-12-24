@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ux on T.J. Barbour</title>
-    <link>/tjbarbour.com/tags/ux/index.xml</link>
+    <link>https://www.tjbarbour.com/tags/ux/index.xml</link>
     <description>Recent content in Ux on T.J. Barbour</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Code released under the Apache 2.0 license..</copyright>
-    <atom:link href="/tjbarbour.com/tags/ux/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.tjbarbour.com/tags/ux/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>fatal focus</title>
-      <link>/tjbarbour.com/post/fatal-focus/</link>
+      <link>https://www.tjbarbour.com/post/fatal-focus/</link>
       <pubDate>Thu, 02 Jul 2015 01:43:44 -0700</pubDate>
       
-      <guid>/tjbarbour.com/post/fatal-focus/</guid>
+      <guid>https://www.tjbarbour.com/post/fatal-focus/</guid>
       <description>
 
 &lt;blockquote&gt;
@@ -23,14 +23,14 @@
 
 &lt;h1 id=&#34;someone-at-redmond-owes-me-an-hour&#34;&gt;&lt;em&gt;Someone at Redmond owes me an hour&amp;hellip;&lt;/em&gt;&lt;/h1&gt;
 
-&lt;p&gt;Ok, but really, sometimes our UX decisions can have unfortunate consequences.  There I was, working on an &lt;a href=&#34;tjbarbour.com/resume/&#34;&gt;important document&lt;/a&gt;, typing away&amp;hellip; ready to finish another line.. (period).. (ent&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Ok, but really, sometimes our UX decisions can have unfortunate consequences.  There I was, working on an &lt;a href=&#34;https://www.tjbarbour.com/resume/&#34;&gt;important document&lt;/a&gt;, typing away&amp;hellip; ready to finish another line.. (period).. (ent&amp;hellip;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;When suddenly&lt;/em&gt; something like this popped up:
-&lt;img src=&#34;tjbarbour.com/img/updates_yey.png&#34; alt=&#34;Updates, one accidental keystroke away...&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://www.tjbarbour.com/img/updates_yey.png&#34; alt=&#34;Updates, one accidental keystroke away...&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Now sure, I probably could&amp;rsquo;ve changed a setting somewhere to not propmt me for updates but in any case, this little dialog just snatched my &lt;a href=&#34;https://en.wikipedia.org/wiki/Focus_(computing)&#34;&gt;focus&lt;/a&gt; away, and that last keystroke I was about to hit? A simple [ENTER] and I went from productive to&amp;hellip;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;tjbarbour.com/img/updates_doomed.png&#34; alt=&#34;...doomed, updates&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.tjbarbour.com/img/updates_doomed.png&#34; alt=&#34;...doomed, updates&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;This may be an exaggeration, but it magnifies &lt;strong&gt;how dangerous it can be to take focus away from your users!&lt;/strong&gt;  Imagine an application that just grabbed your mouse and pointed it to wherever they pleased?  That&amp;rsquo;s essentially what you are doing when you take the focus away.&lt;/p&gt;
 
