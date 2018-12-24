@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Code Style on T.J. Barbour</title>
-    <link>https://tjbarbour.com/tags/code-style/index.xml</link>
+    <link>https://www.tjbarbour.com/tags/code-style/index.xml</link>
     <description>Recent content in Code Style on T.J. Barbour</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>The information in this weblog is provided &#34;AS IS&#34; with no warranties, and confers no rights.  This weblog does not represent the thoughts, intentions, plans or strategies of my employer. It is solely my opinion.</copyright>
-    <atom:link href="https://tjbarbour.com/tags/code-style/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.tjbarbour.com/tags/code-style/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Why Fluent Wins</title>
-      <link>https://tjbarbour.com/post/WhyFluentWins/</link>
+      <link>https://www.tjbarbour.com/post/WhyFluentWins/</link>
       <pubDate>Mon, 14 Mar 2016 01:43:44 -0700</pubDate>
       
-      <guid>https://tjbarbour.com/post/WhyFluentWins/</guid>
+      <guid>https://www.tjbarbour.com/post/WhyFluentWins/</guid>
       <description>
 
 &lt;blockquote&gt;
@@ -57,7 +57,7 @@
 
 &lt;p&gt;When reading this code, the order is almost completely reversed.  Also, when writing it, we keep to jumping around to &amp;ldquo;surround&amp;rdquo; one function with another, watch:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://tjbarbour.com/img/fluent-bad.gif&#34; alt=&#34;traditional functions&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.tjbarbour.com/img/fluent-bad.gif&#34; alt=&#34;traditional functions&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Of course, this can be partially remedied with intermediate variables, but you may not have any use for them.&lt;/p&gt;
 
@@ -112,7 +112,7 @@
 
 &lt;p&gt;See how much easier it is to follow?  You can read through the conversion left to right and typing is much smoother as well, watch:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://tjbarbour.com/img/fluent-good.gif&#34; alt=&#34;fluent interface&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.tjbarbour.com/img/fluent-good.gif&#34; alt=&#34;fluent interface&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;You could say this style of API is more &amp;ldquo;ergonomic&amp;rdquo; for the consumer.  You can achieve this in C# using &lt;a href=&#34;https://msdn.microsoft.com/en-us/library/bb383977.aspx&#34;&gt;Extension &lt;/a&gt; &lt;a href=&#34;http://www.dotnetperls.com/extension&#34;&gt;Methods&lt;/a&gt;, which I&amp;rsquo;ll have to write about soon :)&lt;/p&gt;
 
