@@ -2,23 +2,512 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>T.J. Barbour</title>
-    <link>https://www.tjbarbour.com/index.xml</link>
+    <link>https://tjbarbour.com/index.xml</link>
     <description>Recent content on T.J. Barbour</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Code released under the Apache 2.0 license..</copyright>
-    <lastBuildDate>Thu, 02 Jul 2015 01:43:44 -0700</lastBuildDate>
-    <atom:link href="https://www.tjbarbour.com/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>The information in this weblog is provided &#34;AS IS&#34; with no warranties, and confers no rights.  This weblog does not represent the thoughts, intentions, plans or strategies of my employer. It is solely my opinion.</copyright>
+    <lastBuildDate>Sun, 20 Nov 2016 22:50:00 -0800</lastBuildDate>
+    <atom:link href="https://tjbarbour.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Portfolio</title>
+      <link>https://tjbarbour.com/portfolio/</link>
+      <pubDate>Sun, 20 Nov 2016 22:50:00 -0800</pubDate>
+      
+      <guid>https://tjbarbour.com/portfolio/</guid>
+      <description>
+
+&lt;p&gt;&lt;link href=&#34;https://tjbarbour.com/portfolio.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s a summary of the different projects I&amp;rsquo;ve worked on listed with the freshest up top&lt;/p&gt;
+
+&lt;h1 id=&#34;metroville&#34;&gt;Metroville&lt;/h1&gt;
+
+&lt;h2 id=&#34;lab-system-status-dashboard&#34;&gt;Lab System Status Dashboard&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;[Lead] [UX] [Dev]&lt;/em&gt;&lt;br /&gt;
+&lt;strong&gt;[C#] [ASP.net MVC] [SQL Server] [jQuery] [Bootstrap] [SBAdmin] [Selenium]&lt;/strong&gt;
+&lt;img src=&#34;https://tjbarbour.com/img/screens/tools/metroville.png&#34; alt=&#34;Metroville Web Dashboard Screenshot&#34; /&gt;&lt;br /&gt;
+Lead development of a lab dashboard system mainly for showing system update compliance.&lt;/p&gt;
+
+&lt;h3 id=&#34;main-contributions&#34;&gt;Main Contributions:&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;UI Design including custom rotating owner breakdown visualization&lt;/li&gt;
+&lt;li&gt;Mentoring intern working on the backend&lt;/li&gt;
+&lt;li&gt;Saw opportunity to use Selenium as a dashboard driver&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;impact&#34;&gt;Impact&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Systems are updated with critical patches in days instead of weeks because of increased awareness&lt;/li&gt;
+&lt;li&gt;Operations team no longer has to pester system owners about pushing updates&lt;/li&gt;
+&lt;li&gt;Team members genuinely enjoy having a presentable dashboard in the lab (though its easy to look good when your competition is a blank screen&amp;hellip;)
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&#34;portal&#34;&gt;Portal&lt;/h1&gt;
+
+&lt;h2 id=&#34;single-sign-on-system&#34;&gt;Single Sign On System&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;[Architect] [Lead] [UX] [Dev] [Schema]&lt;/em&gt;&lt;br /&gt;
+&lt;strong&gt;[C#] [ASP.net MVC] [NuGet] [jQuery] [Bootstrap] [HTML] [less] [Selenium] [FluentAutomation] [WCF] [Windows Services] [SQL Server] [PowerShell]&lt;/strong&gt;
+&lt;img src=&#34;https://tjbarbour.com/img/screens/portal/home.png&#34; alt=&#34;Portal Home&#34; /&gt;
+&lt;img src=&#34;https://tjbarbour.com/img/screens/portal/services.png&#34; alt=&#34;Portal Services Listing&#34; /&gt;
+&lt;img src=&#34;https://tjbarbour.com/img/screens/portal/otp.png&#34; alt=&#34;Portal Dual Factor OTP Sign In&#34; /&gt;
+&lt;img src=&#34;https://tjbarbour.com/img/screens/portal/admin-users.png&#34; alt=&#34;Portal Admin List Example&#34; /&gt;
+&lt;img src=&#34;https://tjbarbour.com/img/screens/portal/workflow-add-admin.png&#34; alt=&#34;Portal Workflow&#34; /&gt;
+&lt;img src=&#34;https://tjbarbour.com/img/screens/portal/contact-responsive.png&#34; alt=&#34;Portal Responsive Example Contact Page&#34; /&gt;
+&lt;img src=&#34;https://tjbarbour.com/img/screens/portal/responsive.png&#34; alt=&#34;Portal Responsive Example Contact Page&#34; /&gt;
+Architected the system based on a need to improve the security &amp;amp; ease of integration of authentication for our various web systems.  Lead the development team through several releases.&lt;/p&gt;
+
+&lt;h3 id=&#34;main-contributions-1&#34;&gt;Main Contributions:&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Overall system design including mockups, architecture, source code organization and database schema&lt;/li&gt;
+&lt;li&gt;Extensible multi-factor authentication capabilities (supporting LDAP &amp;amp; Google Authenticator)&lt;/li&gt;
+&lt;li&gt;Simple Single-Sign-On integration for applications using NuGet&lt;/li&gt;
+&lt;li&gt;Coordinated with requirements, QA, operations, application owners &amp;amp; management teams while leading development&lt;/li&gt;
+&lt;li&gt;Incorporated comprehensive integration testing into SDLC to improve quality&lt;/li&gt;
+&lt;li&gt;Lead improvement of database automation PowerShell &amp;amp; SQL scripts to better serve development, testing &amp;amp; deployment needs&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;impact-1&#34;&gt;Impact&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Multiple systems now support dual-factor authentication with simple user adoption&lt;/li&gt;
+&lt;li&gt;Having a fully fleshed-out homepage for our department has raised awareness and impressed customers&lt;/li&gt;
+&lt;li&gt;This gives us a path to transition away from current token-based authentication which was costly &amp;amp; difficult to provision for customers
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&#34;optimus&#34;&gt;Optimus&lt;/h1&gt;
+
+&lt;h2 id=&#34;web-framework&#34;&gt;Web Framework&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;[Architect] [Lead] [UX] [Dev]&lt;/em&gt;&lt;br /&gt;
+&lt;strong&gt;[C#] [ASP.net MVC] [Razor] [AutoMapper] [jQuery] [Bootstrap] [DataTables.net] [HTML] [less] [NuGet]&lt;/strong&gt;
+&lt;img src=&#34;https://tjbarbour.com/img/screens/optimus/layers.png&#34; alt=&#34;Optimus Layers&#34; /&gt;&lt;br /&gt;
+Conceptualized a web framework after noticing the repetitive nature of rich web applications and the need for:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Sharing common libraries and their accompanying adaptations such as AutoMapper, jQuery and DataTables.net&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Encouraging web development &amp;amp; UX best practices (e.g. XSRF Tokens, Post/Redirect/Get) through familiar code patterns such as inheritance &amp;amp; interface implementation&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Simplifying the update &amp;amp; use of underlying CSS &amp;amp; JavaScript resources&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;main-contributions-2&#34;&gt;Main Contributions:&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Implemented initial version including runtime scaffolding in Razor views, JavaScript Behaviors&lt;/li&gt;
+&lt;li&gt;Sold the team on the value &amp;amp; potential&lt;/li&gt;
+&lt;li&gt;Lead system design &amp;amp; worked with several team members to implement framework alongside product releases&lt;/li&gt;
+&lt;li&gt;Reached out for user &amp;amp; developer feedback to improve the framework&lt;/li&gt;
+&lt;li&gt;Mentored contributing developers on growing the framework and helped them achieve ownership of the code&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;impact-2&#34;&gt;Impact:&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Enabled developers with little web experience to develop sophisticated pages in hours or days instead of weeks&lt;/li&gt;
+&lt;li&gt;Significantly improved the user experience across our systems for both our customers &amp;amp; operations team&lt;/li&gt;
+&lt;li&gt;Eased transition to MVC architecture which greatly improved maintainability of code
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&#34;mirage&#34;&gt;Mirage&lt;/h1&gt;
+
+&lt;h2 id=&#34;web-style-guide-package&#34;&gt;Web Style Guide Package&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;[Architect] [Lead] [UX] [Dev]&lt;/em&gt;&lt;br /&gt;
+&lt;strong&gt;[C#] [ASP.net MVC] [Razor] [ASP.net WebForms] [AutoMapper] [jQuery] [Bootstrap] [DataTables.net] [HTML] [less] [NuGet]&lt;/strong&gt;&lt;br /&gt;
+&lt;img src=&#34;https://tjbarbour.com/img/screens/mirage/consistent.png&#34; alt=&#34;Consistent Across Applications&#34; /&gt;&lt;br /&gt;
+Worked with a small team to rapidly define a visual style standard for our department and then baked it into a NuGet package for easy consumption and use in our applications&lt;/p&gt;
+
+&lt;h3 id=&#34;main-contributions-3&#34;&gt;Main Contributions:&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Convinced management team to allow development team to invest time in defining a consistent visual style&lt;/li&gt;
+&lt;li&gt;Lead small team to rapidly iterate on a prototype by training them to use front-end tools such as grunt &amp;amp; less while collaborating through git&lt;/li&gt;
+&lt;li&gt;Lead development of NuGet packages to streamline the style adoption in both ASP.net MVC and leagacy WebForms applications&lt;/li&gt;
+&lt;li&gt;Helped educate team on front-end development &amp;amp; technologies&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;impact-3&#34;&gt;Impact:&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Improved the mobile compatibility of our websites&lt;/li&gt;
+&lt;li&gt;Potential customers immediately trusted our web applications more after the &amp;ldquo;facelift&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Customers reported less issues with browser compatibility&lt;/li&gt;
+&lt;li&gt;The consistency of user experience has simplified work for the operations team&lt;/li&gt;
+&lt;li&gt;The department as a whole takes user experience more seriously, including upper management
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&#34;web-robot&#34;&gt;Web Robot&lt;/h1&gt;
+
+&lt;h2 id=&#34;automated-bulk-order-submission&#34;&gt;Automated Bulk Order Submission&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;[Architect] [Lead] [UX] [Dev]&lt;/em&gt;&lt;br /&gt;
+&lt;strong&gt;[C#] [WinForms] [Selenium]&lt;/strong&gt;&lt;br /&gt;
+&lt;img src=&#34;https://tjbarbour.com/img/screens/webrobot/robot.png&#34; alt=&#34;WebRobot Configuration Screen&#34; /&gt;&lt;br /&gt;
+Created a new version of an automation tool used to submit batch orders to a third party website.&lt;/p&gt;
+
+&lt;h3 id=&#34;main-contributions-4&#34;&gt;Main Contributions:&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Examined the largely undocumented source code of the original tool to decipher how it works and how to implement the new tool&lt;/li&gt;
+&lt;li&gt;Mentored intern through the development, debugging, documentation and maintenance&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;impact-4&#34;&gt;Impact:&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;New tool proved more reliable and fixed previously broken functionality&lt;/li&gt;
+&lt;li&gt;Simplified code base has allowed for improvements suggested by the users to be easily incorporated&lt;/li&gt;
+&lt;li&gt;Lead the way for a unified visual style for our native applications
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&#34;citisense&#34;&gt;CitiSense&lt;/h1&gt;
+
+&lt;h2 id=&#34;portable-air-quality-system-ucsd&#34;&gt;Portable Air Quality System (UCSD)&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;[UX] [Dev]&lt;/em&gt;&lt;br /&gt;
+&lt;strong&gt;[Java] [Android]&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://seelab.ucsd.edu/health/overview.shtml&#34;&gt;Homepage&lt;/a&gt;&lt;br /&gt;
+&lt;img src=&#34;https://tjbarbour.com/img/screens/citisense/timescreen.png&#34; alt=&#34;Android Home AQI Screen&#34; /&gt;
+&lt;img src=&#34;https://tjbarbour.com/img/screens/citisense/full-graph.png&#34; alt=&#34;Android Graph&#34; /&gt;
+&lt;img src=&#34;https://tjbarbour.com/img/screens/citisense/full-graph-landscape.png&#34; alt=&#34;Android Graph Landscape&#34; /&gt;&lt;br /&gt;
+Contributed to development of an Android app which surfaced Air Quality data collected through a portable sensor for a university research project&lt;/p&gt;
+
+&lt;h3 id=&#34;main-contributions-5&#34;&gt;Main Contributions:&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Implemented parts of the Android UI&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Contributed to the UX design&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;impact-5&#34;&gt;Impact:&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Because of the app, people altered their daily behavior after learning about harmful air quality they were exposed to
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&#34;uls&#34;&gt;ULS&lt;/h1&gt;
+
+&lt;h2 id=&#34;feature-licensing-web-application&#34;&gt;Feature Licensing Web Application&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;[Lead] [UX] [Dev] [Schema]&lt;/em&gt;&lt;br /&gt;
+&lt;strong&gt;[C#] [ASP.net MVC] [Razor] [AutoMapper] [jQuery] [Bootstrap] [DataTables.net] [HTML] [CSS] [NuGet] [WCF] [Windows Services] [SQL Server]&lt;/strong&gt;&lt;br /&gt;
+&lt;img src=&#34;https://tjbarbour.com/img/screens/uls/homepage.png&#34; alt=&#34;Homepage With Widgets&#34; /&gt;
+&lt;img src=&#34;https://tjbarbour.com/img/screens/uls/create.png&#34; alt=&#34;Form With Validation&#34; /&gt;
+&lt;img src=&#34;https://tjbarbour.com/img/screens/uls/modal.png&#34; alt=&#34;Modal Dialog&#34; /&gt;&lt;br /&gt;
+Lead development of a Feature Licensing system which allowed product managers to dynamically define features, users to generate licenses &amp;amp; administrators to run reports&lt;/p&gt;
+
+&lt;h3 id=&#34;main-contributions-6&#34;&gt;Main Contributions:&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Implemented the initial version and significant portions of the UI &amp;amp; web services&lt;/li&gt;
+&lt;li&gt;Lead project management on several releases&lt;/li&gt;
+&lt;li&gt;Helped introduce automated database migrations&lt;/li&gt;
+&lt;li&gt;Incorporated the use of PowerPoint mockups to improve our UX designs &amp;amp; simplify our business APIs&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;impact-6&#34;&gt;Impact:&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Increased revenues across several product lines because of secure feature enablement&lt;/li&gt;
+&lt;li&gt;Simultaneously served as a learning experience in UX, scoping system design &amp;amp; Front-End technologies which would lead to future department-wide improvements
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&#34;pki-works&#34;&gt;PKI Works&lt;/h1&gt;
+
+&lt;h2 id=&#34;certificate-authority-system&#34;&gt;Certificate Authority System&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;[UX] [Dev]&lt;/em&gt;&lt;br /&gt;
+&lt;strong&gt;[C#] [ASP.net MVC] [jQuery] [ASP.net WebForms] [HTML] [CSS] [Silverlight] [Windows Services] [SQL Server]&lt;/strong&gt;&lt;br /&gt;
+&lt;img src=&#34;https://tjbarbour.com/img/screens/pkiw/agree.png&#34; alt=&#34;Terms Agreement&#34; /&gt;
+&lt;img src=&#34;https://tjbarbour.com/img/screens/pkiw/form.png&#34; alt=&#34;Terms Agreement&#34; /&gt;
+&lt;img src=&#34;https://tjbarbour.com/img/screens/pkiw/list.png&#34; alt=&#34;Terms Agreement&#34; /&gt;&lt;br /&gt;
+Contributed to UI development of a Certificate Authority management system including customer facing portal &amp;amp; administration website.&lt;/p&gt;
+
+&lt;h3 id=&#34;main-contributions-7&#34;&gt;Main Contributions:&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Implemented significant portions of the UI&lt;/li&gt;
+&lt;li&gt;Participated in design discussions&lt;/li&gt;
+&lt;li&gt;Assisted in drafting patent proposal which was later granted&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;impact-7&#34;&gt;Impact:&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Generated revenue as an approved WiMax device certificate authority&lt;/li&gt;
+&lt;li&gt;Extensible system allowed for the support of other internal certificate needs with reasonable code changes
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&#34;prism&#34;&gt;PRiSM&lt;/h1&gt;
+
+&lt;h2 id=&#34;code-signing-web-application&#34;&gt;Code Signing Web Application&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;[UX] [Dev]&lt;/em&gt;&lt;br /&gt;
+&lt;strong&gt;[C#] [ASP.net MVC] [ASP.net WebForms] [jQuery] [HTML] [CSS] [Windows Services] [SQL Server]&lt;/strong&gt;&lt;br /&gt;
+&lt;img src=&#34;https://tjbarbour.com/img/screens/prism/generate.png&#34; alt=&#34;Dynamic Code Signing Form (1/2)&#34; /&gt;
+&lt;img src=&#34;https://tjbarbour.com/img/screens/prism/generate2.png&#34; alt=&#34;Dynamic Code Signing Form (2/2)&#34; /&gt;&lt;br /&gt;
+Contributed to UI &amp;amp; backend platform-custom plugins to support generating code signatures and other secure data.&lt;/p&gt;
+
+&lt;h3 id=&#34;main-contributions-8&#34;&gt;Main Contributions:&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Main developer of second version of the system&lt;/li&gt;
+&lt;li&gt;Implemented several custom code signing plugins to support internal &amp;amp; 3rd party customers&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Continually looked for ways to improve the system as we expanded it&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;impact-8&#34;&gt;Impact:&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Generated revenue from external code signing service customers&lt;/li&gt;
+&lt;li&gt;Helped developers in other departments by providing necessary code signing features
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&#34;locksmith&#34;&gt;Locksmith&lt;/h1&gt;
+
+&lt;h2 id=&#34;data-generation-service&#34;&gt;Data Generation Service&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;[UX] [Dev]&lt;/em&gt;&lt;br /&gt;
+&lt;strong&gt;[C#] [Windows Services] [WCF]&lt;/strong&gt;&lt;br /&gt;
+&lt;img src=&#34;https://tjbarbour.com/img/screens/tools/locksmith.jpg&#34; alt=&#34;Locksmith Monitor Screenshot&#34; /&gt;&lt;br /&gt;
+Sole developer of a service for pre-generating data used to speed up other PKI operations&lt;/p&gt;
+
+&lt;h3 id=&#34;main-contributions-9&#34;&gt;Main Contributions:&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Developed a reliable service, client libraries, adapters, inventory monitor, test client &amp;amp; stress test system to ensure the stability&lt;/li&gt;
+&lt;li&gt;Created a comprehensive unit test suite to ensure reliability&lt;/li&gt;
+&lt;li&gt;Worked alongside application developers to integrate with various systems&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;impact-9&#34;&gt;Impact:&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Customer data generation was improved by orders of magnitude&lt;/li&gt;
+&lt;li&gt;Operators now have more flexibility and less pressure to fulfill orders&lt;/li&gt;
+&lt;li&gt;The system has been fully operational for several years with very little changes since the initial release
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&#34;hand-held-unit&#34;&gt;Hand Held Unit&lt;/h1&gt;
+
+&lt;h2 id=&#34;portable-fare-device-printer&#34;&gt;Portable Fare Device &amp;amp; Printer&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;[C++] [MFC]&lt;/strong&gt;&lt;br /&gt;
+&lt;img src=&#34;https://tjbarbour.com/img/screens/hhu/pda.jpg&#34; alt=&#34;Windows Pocket PC&#34; /&gt;
+&lt;img src=&#34;https://tjbarbour.com/img/screens/hhu/printer.jpg&#34; alt=&#34;Bluetooth Printer&#34; /&gt;
+I helped with development of fare/ticket auditing for an NFC transit system on a hand held PDA device with the ability to print out receipts&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&#34;tools&#34;&gt;Tools&lt;/h1&gt;
+
+&lt;p&gt;Here are some less significant but still (somewhat) interesting tools&lt;/p&gt;
+
+&lt;h2 id=&#34;filebridge-browser-initiated-network-uploads&#34;&gt;Filebridge - Browser Initiated Network Uploads&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;[C#] [PowerShell] [jQuery]&lt;/strong&gt;
+&lt;img src=&#34;https://tjbarbour.com/img/screens/filebridge/prompt.png&#34; alt=&#34;Network File Copies Launched from a Web Browser&#34; /&gt;&lt;br /&gt;
+This prototype helped build a system where a website could initiate a network file transfer to improve the performance of file uploads&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;axis-alignment-tool&#34;&gt;Axis alignment tool&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;[C#] [WinForms]&lt;/strong&gt;&lt;br /&gt;
+&lt;img src=&#34;https://tjbarbour.com/img/screens/axis/axis-icon.png&#34; alt=&#34;Axis&#34; /&gt;
+&lt;img src=&#34;https://tjbarbour.com/img/screens/axis/axis.png&#34; alt=&#34;Two Instances with Guidelines&#34; /&gt;&lt;br /&gt;
+This tool overlays a colored axis on the screen to help with aligning UI elements, documents, etc.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;regex-command-line-tool&#34;&gt;RegEx Command Line Tool&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;[C#]&lt;/strong&gt;&lt;br /&gt;
+&lt;img src=&#34;https://tjbarbour.com/img/screens/reggie/reggie.png&#34; alt=&#34;Running RegEx to search in a file&#34; /&gt;&lt;br /&gt;
+This custom RegEx command line tool (affectionately referred to as &amp;lsquo;Reggie&amp;rsquo;) allowd for testing regular expressions at the command line and running them against files to perform complex searches and pipe the results to logs or other programs&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;p2p-chat&#34;&gt;P2P Chat&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;[C#]&lt;/strong&gt;&lt;br /&gt;
+Ok so, &lt;em&gt;one time&lt;/em&gt;, our internal LAN chat system was down for an extended time and we weren&amp;rsquo;t sure if it was going to be fixed.  So since I wanted to save all of us the time of walking across the lab to bug each other about every little question, I desperately created a P2P chat system that you could run from the command line.  It got us through a few dark days&amp;hellip;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;!--
+&lt;div class=&#34;row&#34;&gt;
+    &lt;span class=&#34;label label-success&#34;&gt;UI&lt;/span&gt;
+    &lt;span class=&#34;label label-success&#34;&gt;Lead&lt;/span&gt;
+    &lt;span class=&#34;label label-success&#34;&gt;Dev&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&#34;row&#34;&gt;
+    &lt;span class=&#34;label label-primary&#34;&gt;C#&lt;/span&gt;
+    &lt;span class=&#34;label label-primary&#34;&gt;ASP.net MVC&lt;/span&gt;
+    &lt;span class=&#34;label label-primary&#34;&gt;Bootstrap&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&#34;row&#34;&gt;
+    &lt;img src=&#34;https://tjbarbour.com/img/screens/tools/metroville.png&#34; alt=&#34;Metroville Web Dashborad Screenshot&#34;&gt;
+&lt;/div&gt; --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Why Fluent Wins</title>
+      <link>https://tjbarbour.com/post/WhyFluentWins/</link>
+      <pubDate>Mon, 14 Mar 2016 01:43:44 -0700</pubDate>
+      
+      <guid>https://tjbarbour.com/post/WhyFluentWins/</guid>
+      <description>
+
+&lt;blockquote&gt;
+&lt;p&gt;Fluent APIs better match our mental model of how data is processed == WIN&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&#34;cześć-hello-in-polish&#34;&gt;Cześć (hello in Polish)&lt;/h1&gt;
+
+&lt;p&gt;Does this make sense to you?&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;+ 3 4&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;You may read this as &amp;ldquo;Let&amp;rsquo;s do an addition of 3 and 4.&amp;rdquo;  Sure, you may be familiar with &lt;a href=&#34;https://en.wikipedia.org/wiki/Polish_notation&#34;&gt;&amp;ldquo;Polish Notation&amp;rdquo;&lt;/a&gt; or variants like &amp;ldquo;Reverse Polish Notation&amp;rdquo; or RPN, but it&amp;rsquo;s not how most people naturally process these kind of operations.&lt;/p&gt;
+
+&lt;p&gt;Of course, we usually think about it like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;3 + 4&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Here we envision this as &amp;ldquo;You have three, now add four to it.&amp;rdquo;  This seems natural.  And as we&amp;rsquo;ll see, other notations aggravate the complexity when you chain many operations.&lt;/p&gt;
+
+&lt;h1 id=&#34;functions-make-us-think-in-reverse&#34;&gt;Functions make us think in reverse&lt;/h1&gt;
+
+&lt;p&gt;Functions/Methods act more like Polish notation:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;int result = Math.pow(2,3); // 8&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;So when programming we write something like &lt;code&gt;POWER 2,3&lt;/code&gt; while in math terms we would write &lt;code&gt;2^3&lt;/code&gt;.  This gets even more confusing when you chain several operations.  Let&amp;rsquo;s take the example of doing some data conversion:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Get a string from an XML document&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Base64&#34;&gt;Base64&lt;/a&gt; decode the string to get the binary value&lt;/li&gt;
+&lt;li&gt;Decrypt the binary value&lt;/li&gt;
+&lt;li&gt;Encode the clear binary value as an ASCII string&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Let&amp;rsquo;s look at how this process would be carried out using normal function&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var result = ASCIIEncode( Decrypt( Base64Decode( xml.GetAttribute(&amp;quot;foo&amp;quot;) ), decryptParameters ) );
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;When reading this code, the order is almost completely reversed.  Also, when writing it, we keep to jumping around to &amp;ldquo;surround&amp;rdquo; one function with another, watch:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://tjbarbour.com/img/fluent-bad.gif&#34; alt=&#34;traditional functions&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Of course, this can be partially remedied with intermediate variables, but you may not have any use for them.&lt;/p&gt;
+
+&lt;p&gt;One style of API that remedies this is the &lt;a href=&#34;http://martinfowler.com/bliki/FluentInterface.html&#34;&gt;Fluent Interface&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;fluent-methods-go-step-by-step&#34;&gt;Fluent Methods go step by step&lt;/h1&gt;
+
+&lt;p&gt;A fluent interface usually works by always returning an object of a shared type which exposes common functions.  &lt;a href=&#34;https://jquery.com/&#34;&gt;jQuery&lt;/a&gt; is a prime example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$(&amp;quot;.some-class&amp;quot;)
+  .css(&amp;quot;color&amp;quot;,&amp;quot;red&amp;quot;)
+  .css(&amp;quot;padding&amp;quot;,10)
+  .on(&amp;quot;click&amp;quot;, function(){ console.log(&amp;quot;hai&amp;quot;); });
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Another way to acheive fluent-like interfaces is by adding methods as members to the types they operate on instead of stand alone functions, for example:&lt;/p&gt;
+
+&lt;p&gt;Instead of a generic utility class like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public class Math
+{
+    // ...
+    public Double Power(double base, double exponent)
+    {
+        // ... 
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Imagine a method on the numeric type itself like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public class Double
+{
+    // ...
+    public Double ToPower(double exponent)
+    {
+        return Math.Power(this,exponent); 
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;With usage like &lt;code&gt;2.ToPower(3)&lt;/code&gt; isn&amp;rsquo;t it a bit clearer?&lt;/p&gt;
+
+&lt;p&gt;There are some side benefits as well.  For example, there&amp;rsquo;s less chance you could confuse &lt;strong&gt;parameter order&lt;/strong&gt; with this version of the power function.  This also gives us a very &lt;strong&gt;guided way to organize methods&lt;/strong&gt;.  Instead of having a generic &amp;lsquo;utility&amp;rsquo; class which could become a mishmash of unrelated methods, we add methods to whichever class they apply.  This makes it easier for future developers to find where to add new utility methods and can help avoid &lt;a href=&#34;https://css-tricks.com/what-is-bikeshedding/&#34;&gt;Bikeshedding&lt;/a&gt; about how to organize APIs.&lt;/p&gt;
+
+&lt;h1 id=&#34;example-fluent-ized&#34;&gt;Example, Fluent-ized&lt;/h1&gt;
+
+&lt;p&gt;Let&amp;rsquo;s return to our data conversion sample from earlier, and assume we&amp;rsquo;ve added on the needed class methods for the conversions.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var result = xml.GetAttribute(&amp;quot;foo&amp;quot;).FromBase64().Decrypt(decryptParameters).ToASCII();
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;See how much easier it is to follow?  You can read through the conversion left to right and typing is much smoother as well, watch:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://tjbarbour.com/img/fluent-good.gif&#34; alt=&#34;fluent interface&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You could say this style of API is more &amp;ldquo;ergonomic&amp;rdquo; for the consumer.  You can achieve this in C# using &lt;a href=&#34;https://msdn.microsoft.com/en-us/library/bb383977.aspx&#34;&gt;Extension &lt;/a&gt; &lt;a href=&#34;http://www.dotnetperls.com/extension&#34;&gt;Methods&lt;/a&gt;, which I&amp;rsquo;ll have to write about soon :)&lt;/p&gt;
+
+&lt;p&gt;Moral of the story: &lt;strong&gt;Use Fluent API design whenever possible to ease your API consumer&amp;rsquo;s development&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;(P.S. Thanks to &lt;a href=&#34;http://text.livetyping.com/&#34;&gt;Livetyping&lt;/a&gt; for the typing animations!)&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Spotifygate and Intentionality</title>
-      <link>https://www.tjbarbour.com/post/Spotfy-gate%20&amp;%20Intentionality/</link>
-      <pubDate>Thu, 02 Jul 2015 01:43:44 -0700</pubDate>
+      <link>https://tjbarbour.com/post/Spotfy-gate%20&amp;%20Intentionality/</link>
+      <pubDate>Sun, 07 Feb 2016 01:43:44 -0700</pubDate>
       
-      <guid>https://www.tjbarbour.com/post/Spotfy-gate%20&amp;%20Intentionality/</guid>
+      <guid>https://tjbarbour.com/post/Spotfy-gate%20&amp;%20Intentionality/</guid>
       <description>
-
-&lt;p&gt;&lt;em&gt;Image credit: &lt;a href=&#34;http://thenextweb.com/dd/2015/07/20/wow-thats-green/&#34;&gt;TNW&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Design decisions should be clear and carried out boldly to avoid giving a &amp;lsquo;weird&amp;rsquo; feel&lt;/p&gt;
@@ -26,37 +515,38 @@
 
 &lt;h1 id=&#34;spotifygate&#34;&gt;Spotifygate&lt;/h1&gt;
 
-&lt;p&gt;Spotify got some backlash not long ago when they made a subtle change in their logo.  I personally winced at my windows tray when something looked off with my Spotify logo&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Spotify got some backlash a while  ago when they made a subtle change in their logo.  Personally winced at my windows tray when something looked off with my Spotify logo&amp;hellip;&lt;/p&gt;
 
-&lt;p&gt;Here&amp;rsquo;s the delta from the screencap seen above:
-&lt;img src=&#34;https://www.tjbarbour.com/img/spotify-delta.png&#34; alt=&#34;old spotify vs. new spotify&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s the delta from a screencap:&lt;/p&gt;
 
-&lt;p&gt;Now, most people probably appreciate the new logo and slightly &amp;lsquo;flatter&amp;rsquo; color tone, but that&amp;rsquo;s not the point.  The cange was so subtle that many people didn&amp;rsquo;t have the reaction &lt;em&gt;&amp;lsquo;KEWL LOGO UPDATE!&amp;rsquo;&lt;/em&gt; but instead they probably thought &lt;em&gt;&amp;lsquo;IZ MY MONITOR BROKE?&amp;rsquo;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://tjbarbour.com/img/spotify-delta.png&#34; alt=&#34;old spotify vs. new spotify&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now, most people probably appreciate the new logo and slightly &amp;lsquo;flatter&amp;rsquo; color tone, but that&amp;rsquo;s not the point.  The change was so subtle that many people didn&amp;rsquo;t have the reaction &lt;em&gt;&amp;lsquo;KEWL LOGO UPDATE!&amp;rsquo;&lt;/em&gt; but instead they probably thought &lt;em&gt;&amp;lsquo;IZ MY MONITOR BROKE?&amp;rsquo;&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;That was my reaction, &lt;strong&gt;I really wondered for a second if my monitor was on the fritz&lt;/strong&gt; because of the logo change.&lt;/p&gt;
 
-&lt;p&gt;According to the &lt;a href=&#34;http://thenextweb.com/dd/2015/07/20/wow-thats-green/&#34;&gt;TNW&lt;/a&gt; article (found via the great &lt;a href=&#34;http://www.underconsideration.com/brandnew/archives/spotifygate.php&#34;&gt;Brand New&lt;/a&gt;) Spotify has big design changes planned.  They also commented that they &amp;ldquo;didn&amp;rsquo;t [communicate] it clearly&amp;rdquo;.  I think that&amp;rsquo;s the issue, miscommunication, and its not that it required a press release, but rather that the change itself didn&amp;rsquo;t communicate well on its own.&lt;/p&gt;
+&lt;p&gt;According to the &lt;a href=&#34;http://thenextweb.com/dd/2015/07/20/wow-thats-green/&#34;&gt;TNW&lt;/a&gt; article (found via the great &lt;a href=&#34;http://www.underconsideration.com/brandnew/archives/spotifygate.php&#34;&gt;Brand New&lt;/a&gt;) Spotify has big design changes planned.  They also commented that they &amp;ldquo;didn&amp;rsquo;t communicate it clearly&amp;rdquo;.  I think that&amp;rsquo;s the issue, miscommunication, and it&amp;rsquo;s not that it required a press release, but rather that the change itself didn&amp;rsquo;t communicate well on its own.&lt;/p&gt;
 
 &lt;h1 id=&#34;intentionality&#34;&gt;Intentionality&lt;/h1&gt;
 
 &lt;p&gt;One opinion I&amp;rsquo;ve formed in the (short) time I&amp;rsquo;ve worked in design is that &lt;strong&gt;your decisions should be clear and not wishy-washy&lt;/strong&gt;.  What do I mean? compare these 2 screnshots:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://www.tjbarbour.com/img/bootstrap-popover-overlap.png&#34; alt=&#34;2 bootstrap popovers, default above, &#39;overlapping&#39; adjustment below&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://tjbarbour.com/img/bootstrap-popover-overlap.png&#34; alt=&#34;2 bootstrap popovers, default above, &#39;overlapping&#39; adjustment below&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;This is from &lt;a href=&#34;http://getbootstrap.com/javascript/#popovers&#34;&gt;bootstrap documentation for the popover&lt;/a&gt;.  The top popover is the default style, where the popover &amp;lsquo;arrow&amp;rsquo; sits right next to the trigger element.  The screnshot below shows a slight modification where the arrow sits on top of the trigger element.  Why the modification?  The overlapping style creates a stronger indication of the relationship between the popover and the trigger, also its visually easier to pick up because of the contrast in this case.  The top (default) version just sets the popover next to the trigger, and doesn&amp;rsquo;t quite make a decision &amp;ldquo;Am I gonna hover to the side, or sit on top of the trigger? hmm&amp;hellip;&amp;rdquo;  Whereas in the modified example, its more obvious &amp;ldquo;Yup, I&amp;rsquo;m a popover, and I CAME FROM this trigger element right here, right under my arrow!&amp;rdquo;&lt;/p&gt;
 
 &lt;p&gt;It&amp;rsquo;s just my opinion, but I think that &lt;strong&gt;when you make design choices (and similarly develoment choices..) the more explicit you are, the easier it is for the user to follow where you are going and what you are doing&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;Maybe this is a reach, but I&amp;rsquo;d say that in the case of Spotify, if they were going to make &amp;lsquo;big design changes&amp;rsquo; they should&amp;rsquo;ve made it clear with a totally new logo, but by making a small (but still noticable) change, people were confused and couldn&amp;rsquo;t tell what they were trying to achieve.&lt;/p&gt;
+&lt;p&gt;Maybe this is a reach, but I&amp;rsquo;d say that in the case of Spotify, if they were going to make &amp;lsquo;big design changes&amp;rsquo; they should&amp;rsquo;ve made it clear with a totally new logo, but by making a small (but still noticable) change, people were confused and couldn&amp;rsquo;t tell what they were trying to achieve.  At least there should have been some other change in conjunction with the color to make it obvious.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>fatal focus</title>
-      <link>https://www.tjbarbour.com/post/fatal-focus/</link>
-      <pubDate>Thu, 02 Jul 2015 01:43:44 -0700</pubDate>
+      <title>Fatal Focus</title>
+      <link>https://tjbarbour.com/post/fatal-focus/</link>
+      <pubDate>Sat, 26 Dec 2015 00:45:22 -0800</pubDate>
       
-      <guid>https://www.tjbarbour.com/post/fatal-focus/</guid>
+      <guid>https://tjbarbour.com/post/fatal-focus/</guid>
       <description>
 
 &lt;blockquote&gt;
@@ -65,14 +555,14 @@
 
 &lt;h1 id=&#34;someone-at-redmond-owes-me-an-hour&#34;&gt;&lt;em&gt;Someone at Redmond owes me an hour&amp;hellip;&lt;/em&gt;&lt;/h1&gt;
 
-&lt;p&gt;Ok, but really, sometimes our UX decisions can have unfortunate consequences.  There I was, working on an &lt;a href=&#34;https://www.tjbarbour.com/resume/&#34;&gt;important document&lt;/a&gt;, typing away&amp;hellip; ready to finish another line.. (period).. (ent&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Ok, but really, sometimes our UX decisions can have unfortunate consequences.  There I was, working on an &lt;a href=&#34;https://tjbarbour.com/resume/&#34;&gt;important document&lt;/a&gt;, typing away&amp;hellip; ready to finish another line.. (period).. (ent&amp;hellip;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;When suddenly&lt;/em&gt; something like this popped up:
-&lt;img src=&#34;https://www.tjbarbour.com/img/updates_yey.png&#34; alt=&#34;Updates, one accidental keystroke away...&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://tjbarbour.com/img/updates_yey.png&#34; alt=&#34;Updates, one accidental keystroke away...&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Now sure, I probably could&amp;rsquo;ve changed a setting somewhere to not propmt me for updates but in any case, this little dialog just snatched my &lt;a href=&#34;https://en.wikipedia.org/wiki/Focus_(computing)&#34;&gt;focus&lt;/a&gt; away, and that last keystroke I was about to hit? A simple [ENTER] and I went from productive to&amp;hellip;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://www.tjbarbour.com/img/updates_doomed.png&#34; alt=&#34;...doomed, updates&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://tjbarbour.com/img/updates_doomed.png&#34; alt=&#34;...doomed, updates&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;This may be an exaggeration, but it magnifies &lt;strong&gt;how dangerous it can be to take focus away from your users!&lt;/strong&gt;  Imagine an application that just grabbed your mouse and pointed it to wherever they pleased?  That&amp;rsquo;s essentially what you are doing when you take the focus away.&lt;/p&gt;
 
@@ -95,16 +585,248 @@
     </item>
     
     <item>
-      <title>Hello, I&#39;m T.J.</title>
-      <link>https://www.tjbarbour.com/about/</link>
+      <title>Hello World!</title>
+      <link>https://tjbarbour.com/post/hello-world/</link>
+      <pubDate>Fri, 25 Dec 2015 00:45:22 -0800</pubDate>
+      
+      <guid>https://tjbarbour.com/post/hello-world/</guid>
+      <description>
+
+&lt;h1 id=&#34;hello-world&#34;&gt;Hello World!&lt;/h1&gt;
+
+&lt;p&gt;Just setting up my blog, I&amp;rsquo;m using &lt;a href=&#34;https://gohugo.io/&#34;&gt;HUGO.io&lt;/a&gt; for static site generation, with the &lt;a href=&#34;http://themes.gohugo.io/startbootstrap-clean-blog/&#34;&gt;Start Bootstrap Clean Blog Template&lt;/a&gt; following the great instructions at the &lt;a href=&#34;https://github.com/humboldtux/sbcb-demo&#34;&gt;sample blog&amp;rsquo;s repo&lt;/a&gt;.  Also, I&amp;rsquo;m using the awesome &lt;a href=&#34;http://alssndro.github.io/trianglify-background-generator/&#34;&gt;Trianglify Background Generator&lt;/a&gt; for my backgrounds.&lt;/p&gt;
+
+&lt;p&gt;More coming soon!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Resume - T.J. Barbour</title>
+      <link>https://tjbarbour.com/post/draft/~resume/</link>
       <pubDate>Thu, 02 Jul 2015 01:12:08 -0700</pubDate>
       
-      <guid>https://www.tjbarbour.com/about/</guid>
-      <description>&lt;div class=&#34;headshot img-circle&#34;&gt;&lt;/div&gt;
+      <guid>https://tjbarbour.com/post/draft/~resume/</guid>
+      <description>
 
-&lt;p&gt;My name is T.J. Barbour.  I&amp;rsquo;m a software developer working in San Diego looking for a remote full-time position.&lt;/p&gt;
+&lt;h1 id=&#34;t-j-barbour-s-resume&#34;&gt;T.J. Barbour&amp;rsquo;s Resume&lt;/h1&gt;
+
+&lt;h2 id=&#34;contact-information&#34;&gt;Contact Information&lt;/h2&gt;
+
+&lt;p&gt;tjbarbour@gmail.com&lt;br /&gt;
+858 382 0360&lt;br /&gt;
+11429 Florindo Road&lt;br /&gt;
+San Diego CA 92127&lt;br /&gt;
+www.tjbarbour.com&lt;/p&gt;
+
+&lt;h2 id=&#34;skills-summary&#34;&gt;Skills Summary&lt;/h2&gt;
+
+&lt;table&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Experience&lt;/td&gt;
+    &lt;td&gt;10 Years&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Main Skills&lt;/td&gt;
+    &lt;td&gt;C#, HTML, CSS, JavaScript&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;right&#34;&gt;Test&lt;/th&gt;
+&lt;th&gt;Value&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;Experience&lt;/td&gt;
+&lt;td&gt;10 Years&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;Main Skills&lt;/td&gt;
+&lt;td&gt;C#, HTML, CSS, JavaScript&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;Frameworks&lt;/td&gt;
+&lt;td&gt;.net, ASP.net MVC, jQuery, Bootstrap, WCF, Entity Framework&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;Tools&lt;/td&gt;
+&lt;td&gt;Visual Studio, TFS, NuGet, LINQPad, MS Office&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;Specializations&lt;/td&gt;
+&lt;td&gt;UI &amp;amp; UX, Security, Multi-Tiered Application Design&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;work-experience&#34;&gt;Work Experience&lt;/h2&gt;
+
+&lt;h3 id=&#34;arris-formerly-motorola-staff-software-engineer-august-2006-present&#34;&gt;ARRIS (formerly Motorola) - &lt;em&gt;Staff Software Engineer&lt;/em&gt; August 2006 - Present&lt;/h3&gt;
+
+&lt;p&gt;A lead developer involved in system design, implementation, and project management among other responsibilities in the “PKI Center” security department with a focus on User Interfaces and User Experience&lt;/p&gt;
+
+&lt;h4 id=&#34;projects&#34;&gt;Projects&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;Optimus&amp;rdquo; Web Framework
+
+&lt;ul&gt;
+&lt;li&gt;Designed and implemented a NuGet package to standardize and simplify ASP.net MVC web development and minimize the need to create views (html/cshtml)&lt;/li&gt;
+&lt;li&gt;Worked with a team to create a standard department style and implemented it in the framework using Bootstrap, LESS and MVC templates&lt;/li&gt;
+&lt;li&gt;Integrated useful libraries such as AutoMapper, T4MVC, and DataTables.net&lt;/li&gt;
+&lt;li&gt;Migrated all actively developed department web applications to the framework&lt;/li&gt;
+&lt;li&gt;Application code bases were reduced by several factors and are now easier to maintain&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Single-Sign-On Portal (link*S)
+
+&lt;ul&gt;
+&lt;li&gt;Designed and implemented an ASP.net MVC web application which served as a department homepage and a single-sign-on portal for other applications&lt;/li&gt;
+&lt;li&gt;Implemented multi-factor authentication using Time-Based One Time Passwords (RFC6238, supporting Google Authenticator) and LDAP&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Online Code-Signing System&lt;br /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Implemented many parts of the ASP.net WebForms website for submitting code-signing requests&lt;/li&gt;
+&lt;li&gt;Implemented many of the custom code-signature plug-ins in the backend which interfaced with a Hardware Security Module (HSM)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Secure Data Pre-Generation Service&lt;br /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Designed and implemented a WCF Windows Service and supporting clients &amp;amp; libraries to pre-generate data used by several applications&lt;/li&gt;
+&lt;li&gt;The service has increased performance by orders of magnitude and has run smoothly for years with practically no modifications needed&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Online Certificate Authority System (link*)
+
+&lt;ul&gt;
+&lt;li&gt;Contributed to the implementation of the ASP.net WebForms website and the design of the system including certificate generation using configurable XML templates&lt;/li&gt;
+&lt;li&gt;Contributed to a patent for the certificate system (#20110047374)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Secure Licensing System (link*)
+
+&lt;ul&gt;
+&lt;li&gt;Contributed to the design &amp;amp; implementation of a system for generating secure feature-licenses through an ASP.net MVC web interface as well as an automated WCF Web Service&lt;/li&gt;
+&lt;li&gt;Lead the project management for some releases&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Other Contributions&lt;br /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Gave presentations for training, project design, and “brown-bag” technical education talks&lt;/li&gt;
+&lt;li&gt;Introduced best practices including scripted DB migrations and automated UI Testing with Selenium&lt;/li&gt;
+&lt;li&gt;Conducted interviews, mentored interns and trained new hires&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>about</title>
+      <link>https://tjbarbour.com/about/</link>
+      <pubDate>Thu, 02 Jul 2015 01:12:08 -0700</pubDate>
+      
+      <guid>https://tjbarbour.com/about/</guid>
+      <description>&lt;p&gt;My name is T.J. Barbour.  I&amp;rsquo;m a software developer working in San Diego looking for a remote full-time position.&lt;/p&gt;
 
 &lt;p&gt;See more about my experience in my &lt;a href=&#34;https://dl.dropboxusercontent.com/u/4111188/TJ-Barbour-Resume.pdf&#34;&gt;resume&lt;/a&gt; or contact me using the links below.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://tjbarbour.com/post/draft/c-sharp-expressions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tjbarbour.com/post/draft/c-sharp-expressions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://tjbarbour.com/post/draft/c-sharp-initialization-order/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tjbarbour.com/post/draft/c-sharp-initialization-order/</guid>
+      <description>&lt;p&gt;#Init order
+- Ctor code execution
+- Base code execution
+- autoprop initializers
+- field initializers&lt;/p&gt;
+
+&lt;p&gt;app level
+- static initializers
+- global.asax / same for other platforms?&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://tjbarbour.com/post/draft/step-up-cmd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tjbarbour.com/post/draft/step-up-cmd/</guid>
+      <description>&lt;p&gt;#Step up your CMD game&lt;/p&gt;
+
+&lt;p&gt;Create a directory for your scripts, I suggest &amp;ldquo;C:\Scripts&amp;rdquo;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Hit WINDOWS key (to search) &amp;gt; type cmd &amp;gt; right click on cmd.exe &amp;gt; pin to taskbar&lt;/li&gt;
+&lt;li&gt;Right click on cmd on taskbar &amp;gt; right click on &amp;ldquo;Command Prompt&amp;rdquo; &amp;gt; click Properties&lt;/li&gt;
+&lt;li&gt;Under &amp;ldquo;Target&amp;rdquo; append the text /K &amp;ldquo;cd C:\Scripts&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Click &amp;ldquo;Advanced&amp;hellip;&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Check the &amp;ldquo;Run as administrator&amp;rdquo; checkbox&lt;/li&gt;
+&lt;li&gt;OK out of all the dialogs&lt;/li&gt;
+&lt;li&gt;Click on the CMD taskbar icon (Or use WINDOWS+SHIFT+# where # is the index on your taskbar&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Voila, you are in your scripts folder.  You can drop scripts here that you use frequently to automate more.&lt;/p&gt;
+
+&lt;p&gt;Another small trick: When you are about to run a command you find yourself doing often do it this way instead:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;type out the command as you normall would, but DON&amp;rsquo;T execute!&lt;/li&gt;
+&lt;li&gt;HOME back to the beginning of the command&lt;/li&gt;
+&lt;li&gt;type ECHO in front of the command&lt;/li&gt;
+&lt;li&gt;END to the end of the command&lt;/li&gt;
+&lt;li&gt;Type &amp;gt; something.bat&lt;/li&gt;
+&lt;li&gt;Execute the command&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;This will write your command out to a file, you can try running it (something.bat) and edit it as needed etc.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://tjbarbour.com/post/revisit/kickoff-processes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tjbarbour.com/post/revisit/kickoff-processes/</guid>
+      <description>
+
+&lt;h1 id=&#34;fun-ways-to-kickoff-system-design-tasks&#34;&gt;Fun ways to kickoff system design tasks&lt;/h1&gt;
+
+&lt;h2 id=&#34;post-it-schemas&#34;&gt;Post-it Schemas&lt;/h2&gt;
+
+&lt;p&gt;Simply think of all the &amp;lsquo;things&amp;rsquo; you need to store (user, class, grade, assignment)&lt;/p&gt;
+
+&lt;p&gt;create post its for all of them and start connecting them (whiteboard hopefully)&lt;/p&gt;
+
+&lt;h2 id=&#34;user-role-stickers&#34;&gt;User Role Stickers&lt;/h2&gt;
+
+&lt;p&gt;Visio or any drawing tool, create circles with names of people in different depts.&lt;/p&gt;
+
+&lt;p&gt;Create squares with action names inside&lt;/p&gt;
+
+&lt;p&gt;Simply copy the person circles in to each action&lt;/p&gt;
 </description>
     </item>
     

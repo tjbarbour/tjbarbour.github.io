@@ -2,23 +2,134 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on T.J. Barbour</title>
-    <link>https://www.tjbarbour.com/post/index.xml</link>
+    <link>https://tjbarbour.com/post/index.xml</link>
     <description>Recent content in Posts on T.J. Barbour</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Code released under the Apache 2.0 license..</copyright>
-    <lastBuildDate>Thu, 02 Jul 2015 01:43:44 -0700</lastBuildDate>
-    <atom:link href="https://www.tjbarbour.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>The information in this weblog is provided &#34;AS IS&#34; with no warranties, and confers no rights.  This weblog does not represent the thoughts, intentions, plans or strategies of my employer. It is solely my opinion.</copyright>
+    <lastBuildDate>Mon, 14 Mar 2016 01:43:44 -0700</lastBuildDate>
+    <atom:link href="https://tjbarbour.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Why Fluent Wins</title>
+      <link>https://tjbarbour.com/post/WhyFluentWins/</link>
+      <pubDate>Mon, 14 Mar 2016 01:43:44 -0700</pubDate>
+      
+      <guid>https://tjbarbour.com/post/WhyFluentWins/</guid>
+      <description>
+
+&lt;blockquote&gt;
+&lt;p&gt;Fluent APIs better match our mental model of how data is processed == WIN&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&#34;cześć-hello-in-polish&#34;&gt;Cześć (hello in Polish)&lt;/h1&gt;
+
+&lt;p&gt;Does this make sense to you?&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;+ 3 4&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;You may read this as &amp;ldquo;Let&amp;rsquo;s do an addition of 3 and 4.&amp;rdquo;  Sure, you may be familiar with &lt;a href=&#34;https://en.wikipedia.org/wiki/Polish_notation&#34;&gt;&amp;ldquo;Polish Notation&amp;rdquo;&lt;/a&gt; or variants like &amp;ldquo;Reverse Polish Notation&amp;rdquo; or RPN, but it&amp;rsquo;s not how most people naturally process these kind of operations.&lt;/p&gt;
+
+&lt;p&gt;Of course, we usually think about it like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;3 + 4&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Here we envision this as &amp;ldquo;You have three, now add four to it.&amp;rdquo;  This seems natural.  And as we&amp;rsquo;ll see, other notations aggravate the complexity when you chain many operations.&lt;/p&gt;
+
+&lt;h1 id=&#34;functions-make-us-think-in-reverse&#34;&gt;Functions make us think in reverse&lt;/h1&gt;
+
+&lt;p&gt;Functions/Methods act more like Polish notation:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;int result = Math.pow(2,3); // 8&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;So when programming we write something like &lt;code&gt;POWER 2,3&lt;/code&gt; while in math terms we would write &lt;code&gt;2^3&lt;/code&gt;.  This gets even more confusing when you chain several operations.  Let&amp;rsquo;s take the example of doing some data conversion:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Get a string from an XML document&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Base64&#34;&gt;Base64&lt;/a&gt; decode the string to get the binary value&lt;/li&gt;
+&lt;li&gt;Decrypt the binary value&lt;/li&gt;
+&lt;li&gt;Encode the clear binary value as an ASCII string&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Let&amp;rsquo;s look at how this process would be carried out using normal function&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var result = ASCIIEncode( Decrypt( Base64Decode( xml.GetAttribute(&amp;quot;foo&amp;quot;) ), decryptParameters ) );
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;When reading this code, the order is almost completely reversed.  Also, when writing it, we keep to jumping around to &amp;ldquo;surround&amp;rdquo; one function with another, watch:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://tjbarbour.com/img/fluent-bad.gif&#34; alt=&#34;traditional functions&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Of course, this can be partially remedied with intermediate variables, but you may not have any use for them.&lt;/p&gt;
+
+&lt;p&gt;One style of API that remedies this is the &lt;a href=&#34;http://martinfowler.com/bliki/FluentInterface.html&#34;&gt;Fluent Interface&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;fluent-methods-go-step-by-step&#34;&gt;Fluent Methods go step by step&lt;/h1&gt;
+
+&lt;p&gt;A fluent interface usually works by always returning an object of a shared type which exposes common functions.  &lt;a href=&#34;https://jquery.com/&#34;&gt;jQuery&lt;/a&gt; is a prime example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$(&amp;quot;.some-class&amp;quot;)
+  .css(&amp;quot;color&amp;quot;,&amp;quot;red&amp;quot;)
+  .css(&amp;quot;padding&amp;quot;,10)
+  .on(&amp;quot;click&amp;quot;, function(){ console.log(&amp;quot;hai&amp;quot;); });
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Another way to acheive fluent-like interfaces is by adding methods as members to the types they operate on instead of stand alone functions, for example:&lt;/p&gt;
+
+&lt;p&gt;Instead of a generic utility class like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public class Math
+{
+    // ...
+    public Double Power(double base, double exponent)
+    {
+        // ... 
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Imagine a method on the numeric type itself like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public class Double
+{
+    // ...
+    public Double ToPower(double exponent)
+    {
+        return Math.Power(this,exponent); 
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;With usage like &lt;code&gt;2.ToPower(3)&lt;/code&gt; isn&amp;rsquo;t it a bit clearer?&lt;/p&gt;
+
+&lt;p&gt;There are some side benefits as well.  For example, there&amp;rsquo;s less chance you could confuse &lt;strong&gt;parameter order&lt;/strong&gt; with this version of the power function.  This also gives us a very &lt;strong&gt;guided way to organize methods&lt;/strong&gt;.  Instead of having a generic &amp;lsquo;utility&amp;rsquo; class which could become a mishmash of unrelated methods, we add methods to whichever class they apply.  This makes it easier for future developers to find where to add new utility methods and can help avoid &lt;a href=&#34;https://css-tricks.com/what-is-bikeshedding/&#34;&gt;Bikeshedding&lt;/a&gt; about how to organize APIs.&lt;/p&gt;
+
+&lt;h1 id=&#34;example-fluent-ized&#34;&gt;Example, Fluent-ized&lt;/h1&gt;
+
+&lt;p&gt;Let&amp;rsquo;s return to our data conversion sample from earlier, and assume we&amp;rsquo;ve added on the needed class methods for the conversions.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var result = xml.GetAttribute(&amp;quot;foo&amp;quot;).FromBase64().Decrypt(decryptParameters).ToASCII();
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;See how much easier it is to follow?  You can read through the conversion left to right and typing is much smoother as well, watch:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://tjbarbour.com/img/fluent-good.gif&#34; alt=&#34;fluent interface&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You could say this style of API is more &amp;ldquo;ergonomic&amp;rdquo; for the consumer.  You can achieve this in C# using &lt;a href=&#34;https://msdn.microsoft.com/en-us/library/bb383977.aspx&#34;&gt;Extension &lt;/a&gt; &lt;a href=&#34;http://www.dotnetperls.com/extension&#34;&gt;Methods&lt;/a&gt;, which I&amp;rsquo;ll have to write about soon :)&lt;/p&gt;
+
+&lt;p&gt;Moral of the story: &lt;strong&gt;Use Fluent API design whenever possible to ease your API consumer&amp;rsquo;s development&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;(P.S. Thanks to &lt;a href=&#34;http://text.livetyping.com/&#34;&gt;Livetyping&lt;/a&gt; for the typing animations!)&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Spotifygate and Intentionality</title>
-      <link>https://www.tjbarbour.com/post/Spotfy-gate%20&amp;%20Intentionality/</link>
-      <pubDate>Thu, 02 Jul 2015 01:43:44 -0700</pubDate>
+      <link>https://tjbarbour.com/post/Spotfy-gate%20&amp;%20Intentionality/</link>
+      <pubDate>Sun, 07 Feb 2016 01:43:44 -0700</pubDate>
       
-      <guid>https://www.tjbarbour.com/post/Spotfy-gate%20&amp;%20Intentionality/</guid>
+      <guid>https://tjbarbour.com/post/Spotfy-gate%20&amp;%20Intentionality/</guid>
       <description>
-
-&lt;p&gt;&lt;em&gt;Image credit: &lt;a href=&#34;http://thenextweb.com/dd/2015/07/20/wow-thats-green/&#34;&gt;TNW&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Design decisions should be clear and carried out boldly to avoid giving a &amp;lsquo;weird&amp;rsquo; feel&lt;/p&gt;
@@ -26,37 +137,38 @@
 
 &lt;h1 id=&#34;spotifygate&#34;&gt;Spotifygate&lt;/h1&gt;
 
-&lt;p&gt;Spotify got some backlash not long ago when they made a subtle change in their logo.  I personally winced at my windows tray when something looked off with my Spotify logo&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Spotify got some backlash a while  ago when they made a subtle change in their logo.  Personally winced at my windows tray when something looked off with my Spotify logo&amp;hellip;&lt;/p&gt;
 
-&lt;p&gt;Here&amp;rsquo;s the delta from the screencap seen above:
-&lt;img src=&#34;https://www.tjbarbour.com/img/spotify-delta.png&#34; alt=&#34;old spotify vs. new spotify&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s the delta from a screencap:&lt;/p&gt;
 
-&lt;p&gt;Now, most people probably appreciate the new logo and slightly &amp;lsquo;flatter&amp;rsquo; color tone, but that&amp;rsquo;s not the point.  The cange was so subtle that many people didn&amp;rsquo;t have the reaction &lt;em&gt;&amp;lsquo;KEWL LOGO UPDATE!&amp;rsquo;&lt;/em&gt; but instead they probably thought &lt;em&gt;&amp;lsquo;IZ MY MONITOR BROKE?&amp;rsquo;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://tjbarbour.com/img/spotify-delta.png&#34; alt=&#34;old spotify vs. new spotify&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now, most people probably appreciate the new logo and slightly &amp;lsquo;flatter&amp;rsquo; color tone, but that&amp;rsquo;s not the point.  The change was so subtle that many people didn&amp;rsquo;t have the reaction &lt;em&gt;&amp;lsquo;KEWL LOGO UPDATE!&amp;rsquo;&lt;/em&gt; but instead they probably thought &lt;em&gt;&amp;lsquo;IZ MY MONITOR BROKE?&amp;rsquo;&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;That was my reaction, &lt;strong&gt;I really wondered for a second if my monitor was on the fritz&lt;/strong&gt; because of the logo change.&lt;/p&gt;
 
-&lt;p&gt;According to the &lt;a href=&#34;http://thenextweb.com/dd/2015/07/20/wow-thats-green/&#34;&gt;TNW&lt;/a&gt; article (found via the great &lt;a href=&#34;http://www.underconsideration.com/brandnew/archives/spotifygate.php&#34;&gt;Brand New&lt;/a&gt;) Spotify has big design changes planned.  They also commented that they &amp;ldquo;didn&amp;rsquo;t [communicate] it clearly&amp;rdquo;.  I think that&amp;rsquo;s the issue, miscommunication, and its not that it required a press release, but rather that the change itself didn&amp;rsquo;t communicate well on its own.&lt;/p&gt;
+&lt;p&gt;According to the &lt;a href=&#34;http://thenextweb.com/dd/2015/07/20/wow-thats-green/&#34;&gt;TNW&lt;/a&gt; article (found via the great &lt;a href=&#34;http://www.underconsideration.com/brandnew/archives/spotifygate.php&#34;&gt;Brand New&lt;/a&gt;) Spotify has big design changes planned.  They also commented that they &amp;ldquo;didn&amp;rsquo;t communicate it clearly&amp;rdquo;.  I think that&amp;rsquo;s the issue, miscommunication, and it&amp;rsquo;s not that it required a press release, but rather that the change itself didn&amp;rsquo;t communicate well on its own.&lt;/p&gt;
 
 &lt;h1 id=&#34;intentionality&#34;&gt;Intentionality&lt;/h1&gt;
 
 &lt;p&gt;One opinion I&amp;rsquo;ve formed in the (short) time I&amp;rsquo;ve worked in design is that &lt;strong&gt;your decisions should be clear and not wishy-washy&lt;/strong&gt;.  What do I mean? compare these 2 screnshots:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://www.tjbarbour.com/img/bootstrap-popover-overlap.png&#34; alt=&#34;2 bootstrap popovers, default above, &#39;overlapping&#39; adjustment below&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://tjbarbour.com/img/bootstrap-popover-overlap.png&#34; alt=&#34;2 bootstrap popovers, default above, &#39;overlapping&#39; adjustment below&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;This is from &lt;a href=&#34;http://getbootstrap.com/javascript/#popovers&#34;&gt;bootstrap documentation for the popover&lt;/a&gt;.  The top popover is the default style, where the popover &amp;lsquo;arrow&amp;rsquo; sits right next to the trigger element.  The screnshot below shows a slight modification where the arrow sits on top of the trigger element.  Why the modification?  The overlapping style creates a stronger indication of the relationship between the popover and the trigger, also its visually easier to pick up because of the contrast in this case.  The top (default) version just sets the popover next to the trigger, and doesn&amp;rsquo;t quite make a decision &amp;ldquo;Am I gonna hover to the side, or sit on top of the trigger? hmm&amp;hellip;&amp;rdquo;  Whereas in the modified example, its more obvious &amp;ldquo;Yup, I&amp;rsquo;m a popover, and I CAME FROM this trigger element right here, right under my arrow!&amp;rdquo;&lt;/p&gt;
 
 &lt;p&gt;It&amp;rsquo;s just my opinion, but I think that &lt;strong&gt;when you make design choices (and similarly develoment choices..) the more explicit you are, the easier it is for the user to follow where you are going and what you are doing&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;Maybe this is a reach, but I&amp;rsquo;d say that in the case of Spotify, if they were going to make &amp;lsquo;big design changes&amp;rsquo; they should&amp;rsquo;ve made it clear with a totally new logo, but by making a small (but still noticable) change, people were confused and couldn&amp;rsquo;t tell what they were trying to achieve.&lt;/p&gt;
+&lt;p&gt;Maybe this is a reach, but I&amp;rsquo;d say that in the case of Spotify, if they were going to make &amp;lsquo;big design changes&amp;rsquo; they should&amp;rsquo;ve made it clear with a totally new logo, but by making a small (but still noticable) change, people were confused and couldn&amp;rsquo;t tell what they were trying to achieve.  At least there should have been some other change in conjunction with the color to make it obvious.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>fatal focus</title>
-      <link>https://www.tjbarbour.com/post/fatal-focus/</link>
-      <pubDate>Thu, 02 Jul 2015 01:43:44 -0700</pubDate>
+      <title>Fatal Focus</title>
+      <link>https://tjbarbour.com/post/fatal-focus/</link>
+      <pubDate>Sat, 26 Dec 2015 00:45:22 -0800</pubDate>
       
-      <guid>https://www.tjbarbour.com/post/fatal-focus/</guid>
+      <guid>https://tjbarbour.com/post/fatal-focus/</guid>
       <description>
 
 &lt;blockquote&gt;
@@ -65,14 +177,14 @@
 
 &lt;h1 id=&#34;someone-at-redmond-owes-me-an-hour&#34;&gt;&lt;em&gt;Someone at Redmond owes me an hour&amp;hellip;&lt;/em&gt;&lt;/h1&gt;
 
-&lt;p&gt;Ok, but really, sometimes our UX decisions can have unfortunate consequences.  There I was, working on an &lt;a href=&#34;https://www.tjbarbour.com/resume/&#34;&gt;important document&lt;/a&gt;, typing away&amp;hellip; ready to finish another line.. (period).. (ent&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Ok, but really, sometimes our UX decisions can have unfortunate consequences.  There I was, working on an &lt;a href=&#34;https://tjbarbour.com/resume/&#34;&gt;important document&lt;/a&gt;, typing away&amp;hellip; ready to finish another line.. (period).. (ent&amp;hellip;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;When suddenly&lt;/em&gt; something like this popped up:
-&lt;img src=&#34;https://www.tjbarbour.com/img/updates_yey.png&#34; alt=&#34;Updates, one accidental keystroke away...&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://tjbarbour.com/img/updates_yey.png&#34; alt=&#34;Updates, one accidental keystroke away...&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Now sure, I probably could&amp;rsquo;ve changed a setting somewhere to not propmt me for updates but in any case, this little dialog just snatched my &lt;a href=&#34;https://en.wikipedia.org/wiki/Focus_(computing)&#34;&gt;focus&lt;/a&gt; away, and that last keystroke I was about to hit? A simple [ENTER] and I went from productive to&amp;hellip;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://www.tjbarbour.com/img/updates_doomed.png&#34; alt=&#34;...doomed, updates&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://tjbarbour.com/img/updates_doomed.png&#34; alt=&#34;...doomed, updates&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;This may be an exaggeration, but it magnifies &lt;strong&gt;how dangerous it can be to take focus away from your users!&lt;/strong&gt;  Imagine an application that just grabbed your mouse and pointed it to wherever they pleased?  That&amp;rsquo;s essentially what you are doing when you take the focus away.&lt;/p&gt;
 
@@ -91,6 +203,240 @@
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;strong&gt;So, developers, don&amp;rsquo;t distract your users, let them keep their focus.&lt;/strong&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hello World!</title>
+      <link>https://tjbarbour.com/post/hello-world/</link>
+      <pubDate>Fri, 25 Dec 2015 00:45:22 -0800</pubDate>
+      
+      <guid>https://tjbarbour.com/post/hello-world/</guid>
+      <description>
+
+&lt;h1 id=&#34;hello-world&#34;&gt;Hello World!&lt;/h1&gt;
+
+&lt;p&gt;Just setting up my blog, I&amp;rsquo;m using &lt;a href=&#34;https://gohugo.io/&#34;&gt;HUGO.io&lt;/a&gt; for static site generation, with the &lt;a href=&#34;http://themes.gohugo.io/startbootstrap-clean-blog/&#34;&gt;Start Bootstrap Clean Blog Template&lt;/a&gt; following the great instructions at the &lt;a href=&#34;https://github.com/humboldtux/sbcb-demo&#34;&gt;sample blog&amp;rsquo;s repo&lt;/a&gt;.  Also, I&amp;rsquo;m using the awesome &lt;a href=&#34;http://alssndro.github.io/trianglify-background-generator/&#34;&gt;Trianglify Background Generator&lt;/a&gt; for my backgrounds.&lt;/p&gt;
+
+&lt;p&gt;More coming soon!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Resume - T.J. Barbour</title>
+      <link>https://tjbarbour.com/post/draft/~resume/</link>
+      <pubDate>Thu, 02 Jul 2015 01:12:08 -0700</pubDate>
+      
+      <guid>https://tjbarbour.com/post/draft/~resume/</guid>
+      <description>
+
+&lt;h1 id=&#34;t-j-barbour-s-resume&#34;&gt;T.J. Barbour&amp;rsquo;s Resume&lt;/h1&gt;
+
+&lt;h2 id=&#34;contact-information&#34;&gt;Contact Information&lt;/h2&gt;
+
+&lt;p&gt;tjbarbour@gmail.com&lt;br /&gt;
+858 382 0360&lt;br /&gt;
+11429 Florindo Road&lt;br /&gt;
+San Diego CA 92127&lt;br /&gt;
+www.tjbarbour.com&lt;/p&gt;
+
+&lt;h2 id=&#34;skills-summary&#34;&gt;Skills Summary&lt;/h2&gt;
+
+&lt;table&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Experience&lt;/td&gt;
+    &lt;td&gt;10 Years&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Main Skills&lt;/td&gt;
+    &lt;td&gt;C#, HTML, CSS, JavaScript&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;right&#34;&gt;Test&lt;/th&gt;
+&lt;th&gt;Value&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;Experience&lt;/td&gt;
+&lt;td&gt;10 Years&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;Main Skills&lt;/td&gt;
+&lt;td&gt;C#, HTML, CSS, JavaScript&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;Frameworks&lt;/td&gt;
+&lt;td&gt;.net, ASP.net MVC, jQuery, Bootstrap, WCF, Entity Framework&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;Tools&lt;/td&gt;
+&lt;td&gt;Visual Studio, TFS, NuGet, LINQPad, MS Office&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;Specializations&lt;/td&gt;
+&lt;td&gt;UI &amp;amp; UX, Security, Multi-Tiered Application Design&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;work-experience&#34;&gt;Work Experience&lt;/h2&gt;
+
+&lt;h3 id=&#34;arris-formerly-motorola-staff-software-engineer-august-2006-present&#34;&gt;ARRIS (formerly Motorola) - &lt;em&gt;Staff Software Engineer&lt;/em&gt; August 2006 - Present&lt;/h3&gt;
+
+&lt;p&gt;A lead developer involved in system design, implementation, and project management among other responsibilities in the “PKI Center” security department with a focus on User Interfaces and User Experience&lt;/p&gt;
+
+&lt;h4 id=&#34;projects&#34;&gt;Projects&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;Optimus&amp;rdquo; Web Framework
+
+&lt;ul&gt;
+&lt;li&gt;Designed and implemented a NuGet package to standardize and simplify ASP.net MVC web development and minimize the need to create views (html/cshtml)&lt;/li&gt;
+&lt;li&gt;Worked with a team to create a standard department style and implemented it in the framework using Bootstrap, LESS and MVC templates&lt;/li&gt;
+&lt;li&gt;Integrated useful libraries such as AutoMapper, T4MVC, and DataTables.net&lt;/li&gt;
+&lt;li&gt;Migrated all actively developed department web applications to the framework&lt;/li&gt;
+&lt;li&gt;Application code bases were reduced by several factors and are now easier to maintain&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Single-Sign-On Portal (link*S)
+
+&lt;ul&gt;
+&lt;li&gt;Designed and implemented an ASP.net MVC web application which served as a department homepage and a single-sign-on portal for other applications&lt;/li&gt;
+&lt;li&gt;Implemented multi-factor authentication using Time-Based One Time Passwords (RFC6238, supporting Google Authenticator) and LDAP&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Online Code-Signing System&lt;br /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Implemented many parts of the ASP.net WebForms website for submitting code-signing requests&lt;/li&gt;
+&lt;li&gt;Implemented many of the custom code-signature plug-ins in the backend which interfaced with a Hardware Security Module (HSM)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Secure Data Pre-Generation Service&lt;br /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Designed and implemented a WCF Windows Service and supporting clients &amp;amp; libraries to pre-generate data used by several applications&lt;/li&gt;
+&lt;li&gt;The service has increased performance by orders of magnitude and has run smoothly for years with practically no modifications needed&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Online Certificate Authority System (link*)
+
+&lt;ul&gt;
+&lt;li&gt;Contributed to the implementation of the ASP.net WebForms website and the design of the system including certificate generation using configurable XML templates&lt;/li&gt;
+&lt;li&gt;Contributed to a patent for the certificate system (#20110047374)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Secure Licensing System (link*)
+
+&lt;ul&gt;
+&lt;li&gt;Contributed to the design &amp;amp; implementation of a system for generating secure feature-licenses through an ASP.net MVC web interface as well as an automated WCF Web Service&lt;/li&gt;
+&lt;li&gt;Lead the project management for some releases&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Other Contributions&lt;br /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Gave presentations for training, project design, and “brown-bag” technical education talks&lt;/li&gt;
+&lt;li&gt;Introduced best practices including scripted DB migrations and automated UI Testing with Selenium&lt;/li&gt;
+&lt;li&gt;Conducted interviews, mentored interns and trained new hires&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://tjbarbour.com/post/draft/c-sharp-expressions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tjbarbour.com/post/draft/c-sharp-expressions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://tjbarbour.com/post/draft/c-sharp-initialization-order/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tjbarbour.com/post/draft/c-sharp-initialization-order/</guid>
+      <description>&lt;p&gt;#Init order
+- Ctor code execution
+- Base code execution
+- autoprop initializers
+- field initializers&lt;/p&gt;
+
+&lt;p&gt;app level
+- static initializers
+- global.asax / same for other platforms?&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://tjbarbour.com/post/draft/step-up-cmd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tjbarbour.com/post/draft/step-up-cmd/</guid>
+      <description>&lt;p&gt;#Step up your CMD game&lt;/p&gt;
+
+&lt;p&gt;Create a directory for your scripts, I suggest &amp;ldquo;C:\Scripts&amp;rdquo;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Hit WINDOWS key (to search) &amp;gt; type cmd &amp;gt; right click on cmd.exe &amp;gt; pin to taskbar&lt;/li&gt;
+&lt;li&gt;Right click on cmd on taskbar &amp;gt; right click on &amp;ldquo;Command Prompt&amp;rdquo; &amp;gt; click Properties&lt;/li&gt;
+&lt;li&gt;Under &amp;ldquo;Target&amp;rdquo; append the text /K &amp;ldquo;cd C:\Scripts&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Click &amp;ldquo;Advanced&amp;hellip;&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Check the &amp;ldquo;Run as administrator&amp;rdquo; checkbox&lt;/li&gt;
+&lt;li&gt;OK out of all the dialogs&lt;/li&gt;
+&lt;li&gt;Click on the CMD taskbar icon (Or use WINDOWS+SHIFT+# where # is the index on your taskbar&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Voila, you are in your scripts folder.  You can drop scripts here that you use frequently to automate more.&lt;/p&gt;
+
+&lt;p&gt;Another small trick: When you are about to run a command you find yourself doing often do it this way instead:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;type out the command as you normall would, but DON&amp;rsquo;T execute!&lt;/li&gt;
+&lt;li&gt;HOME back to the beginning of the command&lt;/li&gt;
+&lt;li&gt;type ECHO in front of the command&lt;/li&gt;
+&lt;li&gt;END to the end of the command&lt;/li&gt;
+&lt;li&gt;Type &amp;gt; something.bat&lt;/li&gt;
+&lt;li&gt;Execute the command&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;This will write your command out to a file, you can try running it (something.bat) and edit it as needed etc.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://tjbarbour.com/post/revisit/kickoff-processes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tjbarbour.com/post/revisit/kickoff-processes/</guid>
+      <description>
+
+&lt;h1 id=&#34;fun-ways-to-kickoff-system-design-tasks&#34;&gt;Fun ways to kickoff system design tasks&lt;/h1&gt;
+
+&lt;h2 id=&#34;post-it-schemas&#34;&gt;Post-it Schemas&lt;/h2&gt;
+
+&lt;p&gt;Simply think of all the &amp;lsquo;things&amp;rsquo; you need to store (user, class, grade, assignment)&lt;/p&gt;
+
+&lt;p&gt;create post its for all of them and start connecting them (whiteboard hopefully)&lt;/p&gt;
+
+&lt;h2 id=&#34;user-role-stickers&#34;&gt;User Role Stickers&lt;/h2&gt;
+
+&lt;p&gt;Visio or any drawing tool, create circles with names of people in different depts.&lt;/p&gt;
+
+&lt;p&gt;Create squares with action names inside&lt;/p&gt;
+
+&lt;p&gt;Simply copy the person circles in to each action&lt;/p&gt;
 </description>
     </item>
     
